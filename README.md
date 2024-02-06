@@ -31,12 +31,12 @@ The projects in this repository utilize the following technologies:
 Here is a list of projects included in this repository:
 
 - Project 1: **qr-code-component-main**
-    [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/qr-code-component-main)
-    [Live Demo]()
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/qr-code-component-main)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/qr-code-component-main/)
 
 - Project 2: **testimonials-grid-section-main**
-        [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/testimonials-grid-section-main)
-        [Live Demo]()
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/testimonials-grid-section-main)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/testimonials-grid-section-main/)
 
 ## How to Use
 
