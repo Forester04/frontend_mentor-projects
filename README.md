@@ -1,6 +1,6 @@
 # Frontend Mentor Projects Repository
 
-Welcome to the Frontend Mentor Projects Repository! This repository contains a collection of projects completed by Forester for various challenges hosted on [Frontend Mentor](). Each project demonstrates proficiency in HTML, CSS, JavaScript, and utilizes frameworks like Tailwind and Bootstrap, among other technologies.
+Welcome to the Frontend Mentor Projects Repository! This repository contains a collection of projects completed by Forester for various challenges hosted on [Frontend Mentor](https://www.frontendmentor.io/). Each project demonstrates proficiency in HTML, CSS, JavaScript, and utilizes frameworks like Tailwind and Bootstrap, among other technologies.
 
 # Table of Contents
 
@@ -10,7 +10,6 @@ Welcome to the Frontend Mentor Projects Repository! This repository contains a c
 - [How to Use](#how-to-use)
 - [Contributing](#contributing)
 - [License](#license)
-- [Other](#other)
 
 ## About Frontend Mentor
 
@@ -31,13 +30,13 @@ The projects in this repository utilize the following technologies:
 
 Here is a list of projects included in this repository:
 
-    Project 1: qr-code-component-main
-        Link to Project Repository
-        Live Demo
+- Project 1: **qr-code-component-main**
+    [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/qr-code-component-main)
+    [Live Demo]()
 
-    Project 2: Short Project Description
-        Link to Project Repository
-        Live Demo
+- Project 2: **testimonials-grid-section-main**
+        [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/testimonials-grid-section-main)
+        [Live Demo]()
 
 ## How to Use
 
@@ -59,9 +58,3 @@ Contributions are welcome! If you'd like to contribute to this repository by add
 ## License
 
 This repository is licensed under the MIT License. See the LICENSE file for details.
-
-## Other
-These are other technologies that I used:
-    
-    Moblie-First Approach
-    Some CSS-trick from Smashing Magazine
