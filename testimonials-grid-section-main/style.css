@@ -89,6 +89,20 @@ h2,
 h3 {
 font-weight: 600;
 }
+@keyframes ani-mate {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    50% {
+        opacity: 0.5;
+        scale: 0.7;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
 
 /* components */
 .testimonial__container {
@@ -105,6 +119,7 @@ padding: 2rem;
 border-radius: 0.5rem;
 box-shadow: 0px 48px 100px 0px rgba(17, 12, 46, 0.15);
 margin-bottom: 10px;
+animation: ani-mate 1.5s linear 500ms both 1;
 }
 .testimonial__card__header {
     display: flex;
