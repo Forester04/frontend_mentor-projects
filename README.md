@@ -10,6 +10,7 @@ Welcome to the Frontend Mentor Projects Repository! This repository contains a c
 - [How to Use](#how-to-use)
 - [Contributing](#contributing)
 - [License](#license)
+- [Other](#other)
 
 ## About Frontend Mentor
 
@@ -58,3 +59,9 @@ Contributions are welcome! If you'd like to contribute to this repository by add
 ## License
 
 This repository is licensed under the MIT License. See the LICENSE file for details.
+
+## Other
+These are other technologies that I used:
+    
+    Moblie-First Approach
+    Some CSS-trick from Smashing Magazine
