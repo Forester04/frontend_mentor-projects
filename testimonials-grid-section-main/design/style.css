@@ -1,0 +1,74 @@
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.7;
+    place-content: center;
+    min-height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    background-color: #EFF2F9;
+    }
+.personalcv-container {
+    background-color: #EFF2F9;
+    max-width: 1440px;
+    margin: 0 200px;
+    border-radius: 20px;
+    display: flex;
+
+}
+section img {
+    max-width: 100%;
+    display: block;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 60px;
+}
+
+.cv__section {
+    background-color: #FFFFFF;
+    border-radius: 0 20px 20px 0;
+    flex: 65%;
+    text-align: justify;
+    line-height: 1.7;
+    word-wrap: break-word;
+    padding: 1.5rem;
+}
+.cv__section p {
+    font-family: 'Open Sans', sans-serif;
+}
+.cv__section strong {
+    display: block;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.name {
+    margin-top: 60px;
+}
+.contact__info {
+    border-radius: 20px 0 0 20px;
+    background-color: #064C41;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex: 35%;
+    flex-direction: column;
+    align-items: center;
+}
+.contact__info button {
+    width: 200px;
+    padding: 6px;
+    border-radius: 50px;
+    border: none;
+}
+.contact__info #intro_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.personal_email {
+    margin-top: -20px;
+}
+.occupation {
+    margin-top: -5px;
+}

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Figtree;
+    src: url(assets/fonts/static/Figtree-SemiBold.ttf);
+}
+@keyframes ani-mate {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    50% {
+        opacity: 0.5;
+        scale: 0.7;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+body {
+    height: 100%;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3 {
+    font-weight: 800;
+    font-style: normal;
+    margin: 12px 0;
+}
+.blog__container {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 7%);
+    word-wrap: break-word;
+    padding: 1rem;
+    width: 330px;
+    height: 455px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 7px hsl(0, 0%, 7%);
+    margin-top: 5%;
+    animation: ani-mate 1.5s linear 500ms both 1;
+}
+.blog__container button {
+    display: block;
+    background-color: hsl(47, 88%, 63%);
+    color: hsl(0, 0%, 7%);
+    width: 80px;
+    padding: 6px;
+    margin: 14px 0;
+    border: none;
+    border-radius: 6px;
+    font-weight: 800;
+}
+.blog__container img {
+    border-radius: 16px;
+}
+.description {
+    line-height: 1.5;
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+}
+.title {
+    font-size: 14px;
+    color: hsl(0, 0%, 7%);;
+}
+.user_id {
+    display: flex;
+    margin: 12px 0;
+}
+.user_id h4 {
+    align-self: center;
+    color: hsl(0, 0%, 7%);;
+    margin-left: 2%;
+    font-size: 14px;
+    font-weight: 800;
+}
+.user_id img {
+    width: 30px;
+    height: 30px;
+}
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 5%;
+
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 600px) {
+    .blog__container {
+        margin-top: 50%;
+    }
+    .attribution {
+        margin-top: 10%;
+    }
+} 
