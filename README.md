@@ -37,6 +37,9 @@ Here is a list of projects included in this repository:
 - Project 2: **testimonials-grid-section-main**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/testimonials-grid-section-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/testimonials-grid-section-main/)
+- Project 3: **blog preview card**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/blog-preview-card-main)
+    -[Live Demo](https://forester04.github.io/frontend_mentor-projects/blog-preview-card-main/)
 
 ## How to Use
 

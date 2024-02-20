@@ -10,14 +10,8 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 The challenge is all about creating a blog preview card that is similar to the design provided.
 ### The challenge
@@ -36,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/blog-preview-card-main)
+- Live Site URL: [Live Demo URL](https://forester04.github.io/frontend_mentor-projects/blog-preview-card-main/)
 
 ## My process
 
@@ -54,14 +48,5 @@ I'll try to implement and include in other projects.
 
 ## Author
 
-- Website - [](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Forester04](https://www.frontendmentor.io/profile/Forester04)
 - Twitter - [@wollf](https://www.twitter.com/wollf)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
