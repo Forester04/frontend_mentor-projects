@@ -25,10 +25,6 @@
 body {
     height: 100%;
     background-color: hsl(47, 88%, 63%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 h3 {
     font-weight: 800;
@@ -48,8 +44,11 @@ h3 {
     display: flex;
     flex-direction: column;
     box-shadow: 7px 7px hsl(0, 0%, 7%);
-    margin-top: 7%;
     animation: ani-mate 1.5s linear 500ms both 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .blog__container button {
     display: block;
@@ -92,6 +91,10 @@ h3 {
 .attribution p {
     font-size: 11px;
     margin-top: 12%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
 }
 .attribution p a { 
     color: hsl(228, 45%, 44%);
