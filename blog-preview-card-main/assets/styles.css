@@ -48,7 +48,7 @@ h3 {
     display: flex;
     flex-direction: column;
     box-shadow: 7px 7px hsl(0, 0%, 7%);
-    margin-top: 5%;
+    margin-top: 7%;
     animation: ani-mate 1.5s linear 500ms both 1;
 }
 .blog__container button {
