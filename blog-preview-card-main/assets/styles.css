@@ -33,6 +33,7 @@ h3 {
 }
 h3:hover {
     color:  hsl(47, 88%, 63%);
+    cursor: pointer;
 }
 .blog__container {
     font-family: "Figtree", sans-serif;
