@@ -31,6 +31,9 @@ h3 {
     font-style: normal;
     margin: 12px 0;
 }
+h3:hover {
+    color:  hsl(47, 88%, 63%);
+}
 .blog__container {
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
@@ -101,9 +104,15 @@ h3 {
 }
 @media only screen and (max-width: 600px) {
     .blog__container {
-        margin-top: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-    .attribution {
-        margin-top: 10%;
+    .attribution p {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -80%);
     }
 } 
