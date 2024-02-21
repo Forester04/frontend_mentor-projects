@@ -39,10 +39,10 @@ Here is a list of projects included in this repository:
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/testimonials-grid-section-main/)
 - Project 3: **blog preview card**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/blog-preview-card-main)
-    -[Live Demo](https://forester04.github.io/frontend_mentor-projects/blog-preview-card-main/)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/blog-preview-card-main/)
 - Project 4: **social links profile**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/social-links-profile-main)
-    -[Live Demo](https://forester04.github.io/frontend_mentor-projects/social-links-profile-main/)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/social-links-profile-main/)
 ## How to Use
 
 To view a project, simply navigate to the corresponding directory in the repository. Each project directory contains the source code along with any additional assets or documentation.
