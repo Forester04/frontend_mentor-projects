@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+:root {
+    --pale-primary-blue:  hsl(225, 100%, 94%);
+    --bright-primary-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --fs: 16px;
+
+    --fw-neutral: 500;
+    --fw-semi-bold: 700;
+    --fw-bold: 900;
+    --ft-family: "Red Hat Display", sans-serif;
+    --fs-normal: normal;
+}
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.order__container {
+    font-family: var(--ft-family);
+    font-optical-sizing: auto;
+    font-style: var(--fs-normal);
+    width: 320px;
+    background-image: url();
+    border: 2px solid black;
+    background: url();
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+.order__container > *:not(.illustration) {
+    margin-top: 15px;
+}
+.description {
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    font-weight: 500px;
+    text-align: center;
+}
+.order__container h2 {
+    color: var(--dark-blue);
+}
+.order__container p a {
+    border: 1px solid black;
+    color: var(--bright-primary-blue);
+    font-weight: 700;
+}
+.illustration {
+    width: 100%;
+}
+.plan__cont {
+    display: flex;
+}
+#music_icon {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+}
+.annual__plan {
+    border: 1px solid black;
+
+}
+.annual__plan h5 {
+    color: var(--dark-blue);
+}
+.annual__plan p {
+    color: var(--desaturated-blue);
+}
+button {
+    padding: 0.7rem;
+    width: 220px;
+}
+.last__button {
+    margin-bottom: 15px;
+    margin-top: 0px;
+    /* background-color: transparent; */
+}
+.attribution {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+}
