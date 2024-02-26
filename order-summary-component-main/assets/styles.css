@@ -34,7 +34,7 @@ body {
     font-optical-sizing: auto;
     font-style: var(--fs-normal);
     width: 360px;
-    background-color: #FFFFFF;
+    background-color: var(--pale-blue);
     border: 2px solid black;
     position: absolute;
     top: 50%;
@@ -52,8 +52,8 @@ body {
 }
 .description {
     color: var(--desaturated-blue);
+    font-weight: var(--fw-neutral);
     font-size: 16px;
-    font-weight: 500;
     text-align: center;
     line-height: 1.5;
     margin-left: 10px;
@@ -61,25 +61,25 @@ body {
 }
 .order__container h2 {
     color: var(--dark-blue);
-}
-.order__container p a {
-    border: 1px solid black;
-    color: var(--bright-primary-blue);
-    font-weight: 700;
+    font-weight: var(--fw-bold);
 }
 .illustration {
+    margin-bottom: 15px;
     width: 100%;
 }
 .plan__container {
-    background-color: #F8F9FE;
-    border-radius: 10px;
+    background-color: var(--very-pale-blue);
+    border-radius: 12px;
     margin-left: 10px;
     margin-right: 10px;
     padding: 1.2rem;
     display: flex;
 }
 .plan__container p a {
+    color: var(--bright-primary-blue);
+    font-weight: var(--fw-semi-bold);
     text-align: center;
+    font-size: 14px;
     margin-left: 60px;
 }
 #music_icon {
@@ -92,20 +92,30 @@ body {
 }
 .annual__plan h5 {
     color: var(--dark-blue);
-    font-weight: var(--fw-semi-bold);
+    font-weight: var(--fw-bold);
 }
 .annual__plan p {
     color: var(--desaturated-blue);
-    font-weight: var(--fw-semi-bold);
+    font-weight: var(--fw-neutral);
 }
 button {
-    padding: 0.7rem;
-    width: 220px;
+    font-size: 14px;
+    background-color: var(--bright-primary-blue);
+    font-family: var(--ft-family);
+    font-weight: var(--fw-bold);
+    color: #FFFFFF;
+    padding: 0.9rem;
+    width: 320px;
+    border-radius: 10px;
+}
+.first__button {
+    box-shadow: 0px 20px 3px var(--very-pale-blue);
 }
 .last__button {
     margin-bottom: 15px;
-    margin-top: 0px;
-    /* background-color: transparent; */
+    color: var(--desaturated-blue);
+    margin-top: 0;
+    background-color: transparent;
 }
 .attribution {
     position: absolute;
