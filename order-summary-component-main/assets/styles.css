@@ -23,6 +23,10 @@ body {
   background-color: url();
 }
 .attribution { 
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -99%);
     font-size: 11px; 
     text-align: center; 
 }
@@ -82,6 +86,9 @@ body {
     font-size: 14px;
     margin-left: 60px;
 }
+.plan__container p a:hover {
+    opacity: 0.8;
+}
 #music_icon {
     width: 50px;
     height: 50px;
@@ -98,28 +105,35 @@ body {
     color: var(--desaturated-blue);
     font-weight: var(--fw-neutral);
 }
+.change__link {
+    display: grid;
+    place-content: center;
+}
 button {
     font-size: 14px;
     background-color: var(--bright-primary-blue);
     font-family: var(--ft-family);
     font-weight: var(--fw-bold);
-    color: #FFFFFF;
+    color: var(--pale-primary-blue);
     padding: 0.9rem;
     width: 320px;
     border-radius: 10px;
 }
 .first__button {
-    box-shadow: 0px 20px 3px var(--very-pale-blue);
+    box-shadow: 0 20px 13px var(--pale-primary-blue);
+}
+.first__button:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 .last__button {
     margin-bottom: 15px;
     color: var(--desaturated-blue);
-    margin-top: 0;
     background-color: transparent;
+    margin-bottom: 10px;
 }
-.attribution {
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -95%);
+.last__button:hover {
+    color: var(--dark-blue);
+    font-weight: var(--fw-bold);
+    cursor: pointer;
 }
