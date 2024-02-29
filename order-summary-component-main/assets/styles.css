@@ -10,6 +10,8 @@
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
+    --bg-color: #E0E8FF;
+    --bg-white-color: #FFFFFF;
 
     --fs: 16px;
 
@@ -19,16 +21,23 @@
     --ft-family: "Red Hat Display", sans-serif;
     --fs-normal: normal;
 }
-body {
-  background-color: url();
+main {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#pattern-background {
+    width: 100%;
+    height: 100%;
+    
 }
 .attribution { 
-    position: absolute;
-    top: 99%;
-    left: 50%;
-    transform: translate(-50%, -99%);
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -38,18 +47,14 @@ body {
     font-optical-sizing: auto;
     font-style: var(--fs-normal);
     width: 360px;
-    background-color: var(--pale-blue);
-    border: 2px solid black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
+    background-color: var(--bg-white-color);
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     word-wrap: break-word;
+    margin-top: -20%;
 }
 .order__container > *:not(.illustration) {
     margin-top: 15px;
@@ -68,6 +73,7 @@ body {
     font-weight: var(--fw-bold);
 }
 .illustration {
+    border-radius: 15px 15px 0 0;
     margin-bottom: 15px;
     width: 100%;
 }
@@ -137,3 +143,8 @@ button {
     font-weight: var(--fw-bold);
     cursor: pointer;
 }
+@media only screen and (max-width: 375px) {
+    .order__container {
+        margin: 20px;
+    }
+} 
