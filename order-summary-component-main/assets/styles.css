@@ -1,9 +1,11 @@
+/*** CSS Reset ***/
 * {
     margin: 0;
     padding: 0;
     border: none;
     box-sizing: border-box;
 }
+/*** Setting CSS Variables *****/
 :root {
     --pale-primary-blue:  hsl(225, 100%, 94%);
     --bright-primary-blue: hsl(245, 75%, 52%);
@@ -21,8 +23,11 @@
     --ft-family: "Red Hat Display", sans-serif;
     --fs-normal: normal;
 }
-main {
+body {
     background-color: var(--bg-color);
+    background-image: url(images/pattern-background-desktop.svg);
+}
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +39,7 @@ main {
     
 }
 .attribution { 
-    font-size: 11px; 
+    font-size: 0.6875rem; 
     text-align: center;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -46,7 +51,7 @@ main {
     font-family: var(--ft-family);
     font-optical-sizing: auto;
     font-style: var(--fs-normal);
-    width: 360px;
+    max-width: 23rem;
     background-color: var(--bg-white-color);
     border-radius: 15px;
     display: flex;
@@ -89,7 +94,7 @@ main {
     color: var(--bright-primary-blue);
     font-weight: var(--fw-semi-bold);
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-left: 60px;
 }
 .plan__container p a:hover {
@@ -103,11 +108,13 @@ main {
     margin-left: 20px;
 
 }
-.annual__plan h5 {
+.heading {
+    font-size: 0.8125rem;
     color: var(--dark-blue);
     font-weight: var(--fw-bold);
 }
-.annual__plan p {
+.price {
+    font-size: 0.875rem;
     color: var(--desaturated-blue);
     font-weight: var(--fw-neutral);
 }
@@ -116,7 +123,7 @@ main {
     place-content: center;
 }
 button {
-    font-size: 14px;
+    font-size: 0.875rem;
     background-color: var(--bright-primary-blue);
     font-family: var(--ft-family);
     font-weight: var(--fw-bold);
@@ -144,6 +151,9 @@ button {
     cursor: pointer;
 }
 @media only screen and (max-width: 375px) {
+    body {
+        padding: 1rem;
+    }
     .order__container {
         margin: 20px;
     }
