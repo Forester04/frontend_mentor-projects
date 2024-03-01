@@ -1,0 +1,119 @@
+/*** CSS Reset **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+/*** Creating CSS Variables***/
+:root {
+    --primary-dark-cyan: hsl(158, 36%, 37%);
+    --primary-cream: hsl(30, 38%, 92%);
+    --neutral-very-dark-blue: hsl(212, 21%, 14%);
+    --neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+    --neutral-white: hsl(0, 0%, 100%);
+
+    --first-font-family: "Montserrat", sans-serif;
+    --second-font-family: "Fraunces", serif;
+
+    --fw-medium: 500;
+    --fw-semi-bold: 700;
+
+
+}
+body {
+    padding: 1rem;
+    margin-top: 10%;
+    background-color: var(--primary-cream);
+}
+
+/*** Container Styling ***/
+.product-container {
+    background-color: var(--neutral-white);
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 0 10px 10px;
+
+}
+.product-image {
+    border-radius: 10px 10px 0 0;
+}
+h1 {
+    color: var(--neutral-dark-grayish-blue);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: var(--fw-medium);
+    font-family: var(--first-font-family);
+    letter-spacing: 4px;
+    margin: 10px 0 10px 0;
+}
+h2 {
+    color: var(--neutral-very-dark-blue);
+    font-family: var(--second-font-family);
+    font-weight: var(--fw-semi-bold);
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+}
+.product-container__description {
+    padding: 1rem;
+}
+.description {
+    color: var(--neutral-dark-grayish-blue);
+    font-family: var(--first-font-family);
+    font-weight: var(--fw-medium);
+    font-size: 0.875rem;
+    word-spacing: 3.8px;
+    line-height: 1.5;
+    margin: 10px 0 10px 0;
+}
+.product-price {
+    display: flex;
+    margin: 20px 0 10px 0;
+}
+.offer {
+    color: var(--primary-dark-cyan);
+    font-weight: var(--fw-semi-bold);
+    font-family: var(--second-font-family);
+    font-size: 2rem; 
+}
+.initial {
+    align-self: center;
+    margin-left: 20px;
+    text-decoration: line-through;
+    font-size: 13px;
+    color: var(--neutral-dark-grayish-blue);
+    font-weight: var(--fw-med);
+}
+button {
+    width: 310px;
+    padding: 0.9rem 0;
+    color: var(--neutral-white);
+    background-color: var(--primary-dark-cyan);
+    border-radius: 8px;
+    font-size: var(--first-font-family);
+    font-weight: var(--fw-semi-bold);
+    margin: 15px 0 15px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button p {
+    text-align: center;
+    margin-left: 10px;
+    margin-top: -4px;
+}
+button span {
+    font-weight: var(--fw-semi-bold);
+}
+/*** Footer Styling***/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 20px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

@@ -1,0 +1,8 @@
+/***** CSS Styling guide  *****/
+container - center the container
+          - border radius
+          - second part add padding
+          - Mobile-first approach
+            -padding
+            -
+          
