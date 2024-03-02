@@ -27,6 +27,9 @@ body {
     margin-top: 10%;
     background-color: var(--primary-cream);
 }
+.desktop-product-image {
+    display: none;
+}
 
 /*** Container Styling ***/
 .product-container {
@@ -34,10 +37,10 @@ body {
     display: flex;
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
 
 }
-.product-image {
+.mobile-product-image {
     border-radius: 10px 10px 0 0;
 }
 h1 {
@@ -84,7 +87,7 @@ h2 {
     text-decoration: line-through;
     font-size: 13px;
     color: var(--neutral-dark-grayish-blue);
-    font-weight: var(--fw-med);
+    font-weight: var(--fw-medium);
 }
 button {
     width: 310px;
@@ -117,3 +120,61 @@ button span {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+@media only screen and (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        margin-top: 0;
+    }
+    h2 {
+        line-height: none;
+        font-size: 2rem;
+        margin: 10px 0 10px 0;
+    }
+    button {
+        width: 240px;
+    }
+    .initial {
+        margin-left: 20px;
+    }
+    .offer {
+        font-size: 2rem; 
+    }
+    .product-container__description {
+        padding: 0;
+        margin: 28px;
+    }
+    .description {
+        word-spacing: 2.5px;
+        margin: 20px 0 10px 0;
+    }
+    .desktop-product-image {
+        display: block;
+    }
+    .mobile-product-image {
+        display: none;
+    }
+    .product-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 37rem;
+        word-wrap: break-word;
+        margin-top: -30px;
+    }
+    .desktop-product-image {
+        border-radius: 10px 0 0 10px;
+        width: calc(37rem/2);
+        height: 450px;
+    }
+    button {
+        margin: 30px 0 0 0;
+    }
+    .product-price {
+        display: flex;
+        margin: 30px 0 0 0;
+    }
+} 
