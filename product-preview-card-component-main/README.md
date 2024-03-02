@@ -24,6 +24,14 @@ Users are be able to:
 
 ### Screenshot
 
+**Desktop Preview Screenshot**
+
+![Mobile-preview](screenshots/mobile-preview.png)
+
+**Desktop Preview Screenshot**
+
+![Desktop-preview](screenshots/desktop-preview.png)
+
 
 ### Links
 
