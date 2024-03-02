@@ -30,19 +30,25 @@ The projects in this repository utilize the following technologies:
 
 Here is a list of projects included in this repository:
 
-- Project 1: **qr-code-component-main**
+- Project 1: **Qr-code-component-main**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/qr-code-component-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/qr-code-component-main/)
 
-- Project 2: **testimonials-grid-section-main**
+- Project 2: **Testimonials-grid-section-main**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/testimonials-grid-section-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/testimonials-grid-section-main/)
-- Project 3: **blog preview card**
+- Project 3: **Blog preview card**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/blog-preview-card-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/blog-preview-card-main/)
-- Project 4: **social links profile**
+- Project 4: **Social links profile**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/social-links-profile-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/social-links-profile-main/)
+- Project 5: **Order summary component main**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/order-summary-component-main)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/order-summary-component-main/)
+- Project 6: **Product preview card component**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/product-preview-card-component-main)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/product-preview-card-component-main/)
 ## How to Use
 
 To view a project, simply navigate to the corresponding directory in the repository. Each project directory contains the source code along with any additional assets or documentation.
