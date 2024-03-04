@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Results summary component</title>
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
+    <main class="summary-container">
+      <h1>Your Result</h1>
+      <div class="summary-percentage">
+        <p>76</p>
+        <p>of 100</p>
+      </div>
+      <h3>Great</h3>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+      <div class="summary">
+        <h4>Summary</h4>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="reaction">
+          <p><img src="assets/images/icon-memory.svg" alt="">Reaction</p>
+          <p>80 / 100</p>
+        </div>
+        <div class="Memory">
+          <p><img src="assets/images/icon-memory.svg" alt="">Memory</p>
+          <p>92 / 100</p>
+        </div>
+        <div class="verbal">
+          <p><img src="assets/images/icon-verbal.svg" alt="">Verbal</p>
+          <p>61 / 100</p>
+        </div>
+        <div>
+          <p><img src="assets/images/icon-visual.svg" alt="">Visual</p>
+          <p>72 / 100</p>
+        </div>
+        <button>Continue</button>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
