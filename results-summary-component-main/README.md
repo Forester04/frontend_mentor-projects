@@ -10,9 +10,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -32,8 +30,8 @@ The task involved creating a responsive and visually appealing user interface (U
 
 ### Links
 
-- Solution URL: [Repository Link]()
-- Live Site URL: [Demo Link]()
+- Solution URL: [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/blog-preview-card-main)
+- Live Site URL: [Live Demo URL](https://forester04.github.io/frontend_mentor-projects/results-summary-component-main/)
 
 ## My process
 
@@ -45,23 +43,14 @@ The task involved creating a responsive and visually appealing user interface (U
 - CSS Grid
 - Mobile-first workflow
 
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 ### Continued development
+I'll try to implement and include in other projects.
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
 - Frontend Mentor - [@Forester04](https://www.frontendmentor.io/profile/Forester04)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Twitter - [@wollf](https://www.twitter.com/wollf)
 
 
