@@ -50,7 +50,7 @@ Here is a list of projects included in this repository:
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/product-preview-card-component-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/product-preview-card-component-main/)
 - Project 7: **Results summary component**
-    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/blog-preview-card-main)
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/results-summary-component-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/results-summary-component-main/)
 ## How to Use
 
