@@ -30,7 +30,7 @@ The task involved creating a responsive and visually appealing user interface (U
 
 ### Links
 
-- Solution URL: [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/blog-preview-card-main)
+- Solution URL: [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/results-summary-component-main)
 - Live Site URL: [Live Demo URL](https://forester04.github.io/frontend_mentor-projects/results-summary-component-main/)
 
 ## My process
