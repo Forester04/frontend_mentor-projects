@@ -49,6 +49,9 @@ Here is a list of projects included in this repository:
 - Project 6: **Product preview card component**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/product-preview-card-component-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/product-preview-card-component-main/)
+- Project 7: **Results summary component**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/blog-preview-card-main)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/results-summary-component-main/)
 ## How to Use
 
 To view a project, simply navigate to the corresponding directory in the repository. Each project directory contains the source code along with any additional assets or documentation.
