@@ -19,16 +19,15 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ## Overview
 
 ### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- **Bonus**: Use the local JSON data to dynamically populate the content
+The task involved creating a responsive and visually appealing user interface (UI) using HTML and CSS on every devices's screen size. The main challenge was to design an interface that not only presented static elements but also dynamically populated results. This required structuring the HTML for efficient content display and utilizing CSS to ensure a user-friendly layout and design.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Desktop Preview
+![Desktop Preview](assets/images/screenshots/desktop.png)
+
+#### Mobile Preview
+![Mobile Preview](assets/images/screenshots/mobile.png)
 
 
 ### Links
