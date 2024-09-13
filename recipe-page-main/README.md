@@ -34,8 +34,8 @@ The task involved creating a responsive and visually appealing user interface (U
 
 ### Links
 
-- Solution URL: [Link to Project Repository]()
-- Live Site URL: [Live Demo URL](https://forester04.github.io/frontend_mentor-projects/)
+- Solution URL: [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/recipe-page-main)
+- Live Site URL: [Live Demo URL](https://forester04.github.io/frontend_mentor-projects/recipe-page-main)
 
 ## My process
 
