@@ -1,3 +1,4 @@
+/*Basic CSS Reset*/
 * {
     margin: 0;
     padding: 0;
@@ -8,52 +9,52 @@
     background-color: hsl(0, 0%, 100%);
 }
 .omelette-img {
-    width: 365px;
+    width: 22.8125rem;
 }
 h1 {
     color: hsl(24, 5%, 18%);
     font-family: "Young Serif", sans-serif;
-    margin: 8px 0 8px 0;
-    font-size: 35px;
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 2.1875rem;
     font-weight: 500;
 }
 .content-section {
-    margin: 25px;
+    margin: 1.5625rem;
 }
 .overview-description {
     color: hsl(30, 10%, 34%);
     font-family: "Outfit", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5rem;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 0.5625rem;
+    padding-bottom: 0.5625rem;
 }
 .preparation {
     background-color: hsl(330, 100%, 98%);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-family: "Young Serif", sans-serif;
-    margin-top: 12px;
-    padding: 30px 0 30px 30px;
+    margin-top: 0.76rem;
+    padding: 1.875rem 0 1.875rem 1.875rem;
 }
 .preparation-heading {
     font-family: "Outfit", sans-serif;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
     color: hsl(332, 51%, 32%);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 .preparation ul {
     color: hsl(30, 10%, 34%);
     line-height: 1.8rem;
-    padding-left: 5px;
-    padding-right: 25px;
-    font-size: 16px;
+    padding-left: 0.3125rem;
+    padding-right: 1.5625rem;
+    font-size: 1rem;
 }
 .section-heading {
     color: hsl(14, 45%, 36%);
     font-family: "Young Serif", sans-serif;
-    margin: 20px 0 15px 0;
-    font-size: 28px;
+    margin: 1.25rem 0 0.9375rem 0;
+    font-size: 1.75rem;
     font-weight: 500;
 }
 .subtitle {
@@ -62,7 +63,7 @@ h1 {
 }
 .lists {
     font-family: "Outfit", sans-serif;
-    padding-left: 15px;
+    padding-left: 0.9375rem;
     line-height: 1.8rem;
 }
 .table-description {
@@ -71,7 +72,7 @@ h1 {
     line-height: 1.8rem;
 }
 .new {
-    margin-left: 15px;
+    margin-left: 0.9375rem;
     color: hsl(30, 10%, 34%);
 }
 .square_style {
@@ -93,7 +94,7 @@ table {
     font-family: "Outfit", sans-serif;
     border-collapse: collapse;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 } 
 tr {
     border-bottom: 0.0640rem solid hsl(30, 18%, 87%);
@@ -110,12 +111,12 @@ td:nth-child(1){
     color: hsl(30, 10%, 34%);
 }
 td {
-    padding: 12px;
+    padding: 0.75rem;
 }
 hr {
     color: hsl(30, 54%, 90%);
     opacity: 0.3;
-    margin: 25px 0 25px 0;
+    margin: 1.5625rem 0 1.5625rem 0;
 }
 .attribution { 
     font-size: 11px; text-align: center; 
@@ -123,6 +124,7 @@ hr {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+/*Adding Responsiveness*/
 @media only screen and (min-width: 600px),
        only screen and (min-width: 768px),
        only screen and (min-width: 992px),
@@ -131,44 +133,44 @@ hr {
         background-color: hsl(30, 54%, 90%);
     }
     .recipe {
-        width: 700px;
+        width: 43.75rem;
         margin: auto;
-        border-radius: 16px;
-        margin-top: 90px;
-        margin-bottom: 90px;
-        padding-bottom: 15px;
+        border-radius: 1rem;
+        margin-top: 5.625rem;
+        margin-bottom: 5.625rem;
+        padding-bottom: 0.9375rem;
     }
     .omelette-img {
-        width: 630px;
-        margin: 35px 0 0 35px;
-        border-radius: 16px;
+        width: 39.375rem;
+        margin: 2.1875rem 0 0 2.1875rem;
+        border-radius: 1rem;
     }
     .content-section {
-        margin: 35px;
+        margin: 2.1875rem;
     }
     h1 {
-        font-size: 40px;
-        margin: 4px 0 4px 0;
+        font-size: 2.5rem;
+        margin: 0.25rem 0 0.25rem 0;
     }
     .overview-description {
-        font-size: 16px;
-        padding-top: 5px;
+        font-size: 1rem;
+        padding-top: 0.3125rem;
         line-height: 1.2rem;
     }
     .preparation ul {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .preparation-heading {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .section-heading {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
     .new {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .nutrition, .table-description {
-        font-size: 16px;
+        font-size: 1rem;
     }
     td:nth-child(1){
         text-align: left;
