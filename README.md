@@ -52,6 +52,10 @@ Here is a list of projects included in this repository:
 - Project 7: **Results summary component**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/results-summary-component-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/results-summary-component-main/)
+- Project 8: **Recipe Page main**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/recipe-page-main)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/recipe-page-main)
+
 ## How to Use
 
 To view a project, simply navigate to the corresponding directory in the repository. Each project directory contains the source code along with any additional assets or documentation.
