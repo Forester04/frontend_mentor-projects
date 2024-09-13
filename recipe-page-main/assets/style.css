@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Main body styling*/
+.recipe {
+    background-color: hsl(0, 0%, 100%);
+}
+.omelette-img {
+    width: 365px;
+}
+h1 {
+    color: hsl(24, 5%, 18%);
+    font-family: "Young Serif", sans-serif;
+    margin: 8px 0 8px 0;
+    font-size: 35px;
+    font-weight: 500;
+}
+.content-section {
+    margin: 25px;
+}
+.overview-description {
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 8px;
+    font-family: "Young Serif", sans-serif;
+    margin-top: 12px;
+    padding: 30px 0 30px 30px;
+}
+.preparation-heading {
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 12px;
+    color: hsl(332, 51%, 32%);
+    font-size: 20px;
+    font-weight: 600;
+}
+.preparation ul {
+    color: hsl(30, 10%, 34%);
+    line-height: 1.8rem;
+    padding-left: 5px;
+    padding-right: 25px;
+    font-size: 16px;
+}
+.section-heading {
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", sans-serif;
+    margin: 20px 0 15px 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+.subtitle {
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+}
+.lists {
+    font-family: "Outfit", sans-serif;
+    padding-left: 15px;
+    line-height: 1.8rem;
+}
+.table-description {
+    font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
+    line-height: 1.8rem;
+}
+.new {
+    margin-left: 15px;
+    color: hsl(30, 10%, 34%);
+}
+.square_style {
+    color: hsl(30, 10%, 34%);
+}
+ol li::marker {
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+ul {
+    list-style-type: square;
+}
+ul li::marker {
+    font-size: 0.7em;
+    margin-right: 20px;
+    color: hsl(332, 51%, 32%);
+}
+table {
+    font-family: "Outfit", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+} 
+tr {
+    border-bottom: 0.0640rem solid hsl(30, 18%, 87%);
+}
+tr:last-child {
+    border-bottom: none;
+}
+td:nth-child(2) {
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+}
+td:nth-child(1){
+    text-align: center;
+    color: hsl(30, 10%, 34%);
+}
+td {
+    padding: 12px;
+}
+hr {
+    color: hsl(30, 54%, 90%);
+    opacity: 0.3;
+    margin: 25px 0 25px 0;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media only screen and (min-width: 600px),
+       only screen and (min-width: 768px),
+       only screen and (min-width: 992px),
+       only screen and (min-width: 1200px){
+    body {
+        background-color: hsl(30, 54%, 90%);
+    }
+    .recipe {
+        width: 700px;
+        margin: auto;
+        border-radius: 16px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        padding-bottom: 15px;
+    }
+    .omelette-img {
+        width: 630px;
+        margin: 35px 0 0 35px;
+        border-radius: 16px;
+    }
+    .content-section {
+        margin: 35px;
+    }
+    h1 {
+        font-size: 40px;
+        margin: 4px 0 4px 0;
+    }
+    .overview-description {
+        font-size: 16px;
+        padding-top: 5px;
+        line-height: 1.2rem;
+    }
+    .preparation ul {
+        font-size: 16px;
+    }
+    .preparation-heading {
+        font-size: 20px;
+    }
+    .section-heading {
+        font-size: 28px;
+    }
+    .new {
+        font-size: 16px;
+    }
+    .nutrition, .table-description {
+        font-size: 16px;
+    }
+    td:nth-child(1){
+        text-align: left;
+        color: hsl(30, 10%, 34%);
+    }
+    ul li::marker {
+        font-size: 0.7em;
+    }
+}
