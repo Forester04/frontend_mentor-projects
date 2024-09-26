@@ -20,7 +20,6 @@
     --fw-medium: 500;
     --fw-semi-bold: 700;
 
-
 }
 body {
     padding: 1rem;
@@ -67,9 +66,8 @@ h2 {
     font-family: var(--first-font-family);
     font-weight: var(--fw-medium);
     font-size: 0.875rem;
-    word-spacing: 3.8px;
     line-height: 1.5;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 10px 5px;
 }
 .product-price {
     display: flex;
@@ -110,6 +108,9 @@ button p {
 }
 button span {
     font-weight: var(--fw-semi-bold);
+}
+button:hover {
+    background-color: #1A4031;
 }
 /*** Footer Styling***/
 .attribution { 
