@@ -30,11 +30,15 @@ Users are be able to:
 
 **Desktop Preview Screenshot**
 
-![Mobile-preview](screenshots/mobile-preview.png)
+![Mobile-preview](images/screenshots/mobile.png)
 
 **Desktop Preview Screenshot**
 
-![Desktop-preview](screenshots/desktop-preview.png)
+![Desktop-preview](images/screenshots/desktop.png)
+
+**Active State Screenshot**
+
+![Active-state-preview](images/screenshots/active-state.png)
 
 
 ### Links
@@ -60,5 +64,7 @@ I learnt to develop this simple project from the Mobile-first Approach. This mak
 
 - Frontend Mentor - [@Forester04](https://www.frontendmentor.io/profile/Forester04)
 - Twitter - [@wollf](https://www.twitter.com/wollf)
+
+#### I'll appreciate a code review and collaboration
 
 
