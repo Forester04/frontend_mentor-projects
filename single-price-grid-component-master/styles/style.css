@@ -167,6 +167,9 @@ button {
   padding: 0.9375rem 0 0.9375rem 0;
   border-radius: 0.25rem;
 }
+button:hover {
+  background-color: hsl(71, 83%, 35%);
+}
 .dollar {
   font-weight: var(--bold-font-weight);
   font-size: 1.5rem;
