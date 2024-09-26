@@ -182,10 +182,10 @@ button:hover {
   display: flex;
   align-items: center;
 }
-@media only screen and (min-width: 600px),
-       only screen and (min-width: 768px),
-       only screen and (min-width: 992px),
-       only screen and (min-width: 1200px){
+@media only screen and (min-width: 37.5rem),
+       only screen and (min-width: 48rem),
+       only screen and (min-width: 62rem),
+       only screen and (min-width: 75rem){
       .body {
           display: flex;
           flex-direction: column;
