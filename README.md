@@ -55,6 +55,12 @@ Here is a list of projects included in this repository:
 - Project 8: **Recipe Page main**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/recipe-page-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/recipe-page-main)
+- Project 9: **Single Price Grid-Component**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/single-price-grid-component-master)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/single-price-grid-component-master/)
+- Project 9: **NFT Preview Card Component**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/nft-preview-card-component-main)
+    - [Live Demo ](https://forester04.github.io/frontend_mentor-projects/nft-preview-card-component-main)
 
 ## How to Use
 

@@ -43,8 +43,8 @@ Users are be able to:
 
 ### Links
 
-- Solution URL: [Repository URL](https://github.com/Forester04/frontend_mentor-projects/tree/main/product-preview-card-component-main)
-- Live Site URL: [Live Demo Link](https://forester04.github.io/frontend_mentor-projects/product-preview-card-component-main/)
+- Solution URL: [Repository URL](https://github.com/Forester04/frontend_mentor-projects/tree/main/nft-preview-card-component-main)
+- Live Site URL: [Live Demo Link](https://forester04.github.io/frontend_mentor-projects/nft-preview-card-component-main)
 
 ## My process
 
