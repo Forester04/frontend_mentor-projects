@@ -126,6 +126,17 @@ body {
   font-size: 0.8125rem;
   color: var(--neutral-light-gray);
 }
+.join-section p {
+  color: var(--neutral-grayish-blue);
+  font-size: 0.8125rem;
+  font-weight: var(--normal-font-weight);
+  padding: 0.3125rem 0 1.25em 0;
+  line-height: 1.5rem;
+}
+.subscription-section p {
+  padding: 0.4375rem 0 0.9375rem 0;
+  color: var(--neutral-light-gray);
+}
 h1 {
   font-size: 1rem;
   font-weight: var(--bold-font-weight);
@@ -155,17 +166,6 @@ button {
   width: 15.625rem;
   padding: 0.9375rem 0 0.9375rem 0;
   border-radius: 0.25rem;
-}
-.join-section p {
-  color: var(--neutral-grayish-blue);
-  font-size: 0.8125rem;
-  font-weight: var(--normal-font-weight);
-  padding: 0.3125rem 0 1.25em 0;
-  line-height: 1.5rem;
-}
-.subscription-section p {
-  padding: 0.4375rem 0 0.9375rem 0;
-  color: var(--neutral-light-gray);
 }
 .dollar {
   font-weight: var(--bold-font-weight);
