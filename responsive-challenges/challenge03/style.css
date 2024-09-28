@@ -1,50 +1,53 @@
 * {
     border: none;
     padding: 0;
+    margin: 0;
     outline: none;
     box-sizing: border-box;
 }
 
-body {
+.hero {
     background-color: #23424a;
-    padding-inline: 1rem;
     font-family: "Roboto", sans-serif;
     color: #fff;
+    font-size: 21px;
 }
-.main {
-    margin-block-start: 40px;
-    margin-inline-start: 15px;
-}
-.main h1 {
+.hero__text h1 {
     font-size: 35px;
     font-weight: 800;
 }
-p {
+.hero p {
     line-height: 1.5rem;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
 }
-button {
+.container {
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
     background-color: #38cfd9;
     padding: 8px 30px;
     border-radius: 16px;
-    text-transform: uppercase;
     font-weight: 700;
-    margin-block-start: 15px;
+    color: #23424a;
+    margin-block-start: 30px;
 }
 @media only screen and (min-width: 600px){
-    .main {
-        max-width: 50%;
-        margin-inline-start: 60px;
-        margin-block-start: 100px;
+    .container {
+        width: 80%;
+        max-width: 1400px;
+        padding-block: 100px;
+        padding-inline-start: 100px;
+
     }
-    .main h1 {
-        font-size: 48px;
+    .hero__text {
+        width: 60%;
     }
-    p {
-        font-size: 21px;
-    }
-    button {
-        padding: 12px 40px;
-        margin-block-start: 20px;
-        font-size: 21px;
+    .hero__text h1 {
+        font-size: 3rem;
     }
 }
