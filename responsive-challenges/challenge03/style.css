@@ -1,0 +1,50 @@
+* {
+    border: none;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #23424a;
+    padding-inline: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+.main {
+    margin-block-start: 40px;
+    margin-inline-start: 15px;
+}
+.main h1 {
+    font-size: 35px;
+    font-weight: 800;
+}
+p {
+    line-height: 1.5rem;
+}
+button {
+    background-color: #38cfd9;
+    padding: 8px 30px;
+    border-radius: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-block-start: 15px;
+}
+@media only screen and (min-width: 600px){
+    .main {
+        max-width: 50%;
+        margin-inline-start: 60px;
+        margin-block-start: 100px;
+    }
+    .main h1 {
+        font-size: 48px;
+    }
+    p {
+        font-size: 21px;
+    }
+    button {
+        padding: 12px 40px;
+        margin-block-start: 20px;
+        font-size: 21px;
+    }
+}
