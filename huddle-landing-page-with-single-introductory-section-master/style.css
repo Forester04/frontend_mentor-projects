@@ -1,0 +1,145 @@
+/***  Basic CSS Reset ****/
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+/**** CSS Variables *****/
+:root {
+    --primary-violet: hsl(257, 40%, 49%);
+    --primary-soft-magenta: hsl(300, 69%, 71%);
+    --heading-font-family: "Poppins", sans-serif;
+    --body-font-family: "Open Sans", system-ui;
+}
+body {
+    background-color: var(--primary-violet);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    min-height: 100vh;
+    color: #fff;
+}
+.hero__logo img{
+    max-width: 5.625rem;
+    margin-block-start: 1.5625rem;
+}
+.mockup img {
+    max-width: 16.25rem;
+    margin-block-start: 3.125rem;
+    margin-block-end: 2.5rem;
+}
+.hero__image-section {
+    margin-inline-start: 1.875rem;
+}
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero__text h1 {
+    font-family: var(--heading-font-family);
+    font-weight: 600;
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.hero__text p {
+    padding: 11px;
+    font-family: var(--body-font-family);
+    font-weight: 400;
+    width: 78%;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    text-align: center;
+}
+.hero__social-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-block-start: 30px;
+    margin-block-end: 30px;
+}
+.hero__social-links ul li {
+    border: 1px solid #fff;
+    padding: 0.625rem;
+    border-radius: 50%;
+    text-align: center;
+}
+.btn {
+    background-color: #fff;
+    border-radius: 100px;
+    color: var(--primary-violet);
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 9px 60px;
+    display: inline-block;
+    margin-block-start: 0.625rem;
+}
+.btn:hover {
+    background-color: hsl(257, 65%, 77%);
+    color: #000;
+    cursor: pointer;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(229, 68%, 6%); }
+@media only screen and (min-width: 37.5rem) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-position: top left;
+        padding-inline-start: 4.6875rem;
+        padding-inline-end: 4.6875rem;
+    }
+    .mockup img {
+        max-width: 43.75rem;
+        margin-block-start: 6.5625rem;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero__content {
+        display: flex;
+        gap: 20px;
+    }
+    .hero__logo img{
+        max-width: 10rem;
+    }
+    .hero__social-links {
+        align-self: end;
+        margin-block-start: -5rem;
+    }
+    .hero__text h1 {  
+        width: 90%;         
+        font-size: 2.2rem;
+        text-align: left;
+        line-height: 1.5;
+        margin-inline-start: -2.5rem;
+    }
+    .hero__image-section {
+        margin-inline-start: 0;
+    }
+    .hero__text p {
+        width: 95%; 
+        padding: 0;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: left;
+        margin-block-start: 0.625rem;
+    }
+    .btn {
+        justify-self: start;
+        align-self: start;
+        margin-block-start: 1.25rem;
+        margin-inline-start: 0.625rem;
+        font-size: 0.9rem;
+    }
+}
