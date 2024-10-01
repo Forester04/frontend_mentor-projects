@@ -2,7 +2,6 @@
 
 ![Design preview for the Single price grid component coding challenge](./design/desktop-preview.jpg)
 
-## Frontend Mentor - Product preview card component solution
 
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
