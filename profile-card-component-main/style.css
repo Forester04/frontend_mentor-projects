@@ -79,7 +79,7 @@ body {
     margin-block-end: 10px;
 }
 
-.profile-info h2 {
+.profile-info h1 {
     font-size: 18px;
     margin-bottom: 5px;
     color: #333;
@@ -109,7 +109,7 @@ body {
     text-align: center;
 }
 
-.profile-stats h3 {
+.profile-stats h2, .profile-stats h3, .profile-stats h4 {
     font-size: 18px;
     margin-bottom: 5px;
     color: #333;
