@@ -64,6 +64,9 @@ Here is a list of projects included in this repository:
 - Project 10: **Huddle Landing Page**
     - [Linkk to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/huddle-landing-page-with-single-introductory-section-master)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/huddle-landing-page-with-single-introductory-section-master)
+Project 11: **Profile Card Component**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/profile-card-component-main)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/profile-card-component-main)
 ## How to Use
 
 To view a project, simply navigate to the corresponding directory in the repository. Each project directory contains the source code along with any additional assets or documentation.
