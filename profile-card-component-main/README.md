@@ -38,8 +38,8 @@ Users are be able to:
 
 ### Links
 
-- Solution URL: [Repository URL]()
-- Live Site URL: [Live Demo Link]()
+- Solution URL: [Repository URL](https://github.com/Forester04/frontend_mentor-projects/tree/main/profile-card-component-main)
+- Live Site URL: [Live Demo Link](https://forester04.github.io/frontend_mentor-projects/profile-card-component-main)
 
 ## My process
 
