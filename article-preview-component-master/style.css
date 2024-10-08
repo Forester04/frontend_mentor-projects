@@ -1,0 +1,222 @@
+/****  Basic CSS Reset ****/
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/*** Setting Up variables ****/
+:root {
+    --very-dark-graish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --primary-font-family: "Manrope", sans-serif;
+}
+body {
+    background-color: #E7EEF6;
+    font-family: var(--primary-font-family);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.article {
+    position: relative;
+}
+.article-container {
+    max-width: 100%;
+    width: 320px;
+    background-color: #fff;
+    border-radius: 6px;
+
+}
+.article-image img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 6px 6px 0 0;
+}
+.article-content-wrapper {
+    padding: 1.6rem;
+}
+.article-content h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--very-dark-graish-blue);
+}
+.article-content p{
+    color: var(--desaturated-dark-blue);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-block-start: 10px;
+    padding-right: 13px;
+}
+.avatar-profile {
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-start: 20px;
+    position: relative;
+}
+.profile-container__content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.profile-container__content--name h2 {
+    font-size: 13px;
+    color: var(--very-dark-graish-blue);
+    font-weight: 700;
+}
+.profile-container__content--name p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--desaturated-dark-blue);
+}
+.profile-share {
+    background-color: var(--light-grayish-blue);
+    padding: 8px;
+    border-radius: 50%;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-block-start: 20px;
+}
+.tooltip {
+    display: none;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 320px;
+    background-color: var(--very-dark-graish-blue);
+    color: #fff;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    padding: 20px 0;
+    margin-block-start: 23px;
+    position: absolute;
+    left: -26px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.article-share-links {
+    display: flex;
+    gap: 25px;
+    margin-inline-start: 30px;
+}
+.share {
+    font-size: 13px;
+    opacity: 0.8;
+    letter-spacing: 3px;
+}
+.profile-share-icon {
+    background-color: var(--light-grayish-blue);
+    padding: 8px;
+    margin-inline-end: 30px;
+    border-radius: 50%;
+}
+.profile-container:hover .tooltiptext {
+    visibility: visible;
+    cursor: pointer;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (min-width: 600px) {
+    .article-container {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 660px;
+    }
+    .article {
+        height: 250px;
+        background-color: #fff;
+        width: 61.5%;
+        border-radius: 0 8px 8px 0;
+    }
+    .article-image {
+        width: 38.5%;
+    }
+    .article-image img {
+        max-width: 100%;
+        width: 260px;
+        height: 250px;
+        object-fit: cover;
+        object-position: left;
+        border-radius: 8px 0 0 8px;
+    }
+    .article-content-wrapper {
+        padding-right: 1rem;
+    }
+    .article-content h1 {
+        font-size: 1.2rem;
+        padding-right: 30px;
+    }
+    .profile-container {
+        margin-block-start: 10px;
+        margin-inline-end: 20px;
+    }
+    .article-content p{
+        margin-block-start: 10px;
+    }
+    .article-share {
+        position: relative;
+    }
+    .article-share .tooltip {
+        visibility: hidden;
+        width: 200px;
+        background-color: var(--very-dark-graish-blue);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 10px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .article-share .tooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: var(--very-dark-graish-blue) transparent transparent transparent;
+    } 
+    .article-share:hover .tooltip {
+        visibility: visible;
+        cursor: pointer;
+    }
+    .tooltip .share {
+        font-size: 11px;
+        opacity: 0.8;
+        letter-spacing: 2px;
+    }
+    .share-icon {
+        display: none;
+    }
+    .profile-container:hover .tooltiptext {
+        display: none;
+    }
+      
+}
