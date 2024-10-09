@@ -1,0 +1,90 @@
+*, ::before, ::after
+    margin: 0
+    border: 0
+    box-sizing: border-box
+    outline: none
+
+$body-font-family: "Lexend Deca", sans-serif
+$heading-font-family: "Big Shoulders Display", sans-serif
+$primary-bright-orange: hsl(31, 77%, 52%)
+$primary-dark-cyan: hsl(184, 100%, 22%)
+$primary-very-dark-cyan: hsl(179, 100%, 13%)
+$neutral-transparent-white-pargs: hsla(0, 0%, 100%, 0.75)
+$neutral-very-light-gray-bg-hd-btn: hsl(0, 0%, 95%)
+
+body
+    font-size: 11px
+    background-color: $neutral-very-light-gray-bg-hd-btn
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+.column-container 
+    max-width: 100%
+    max-width: 242px
+.column-one, .column-two, .column-three 
+    padding: 2rem
+.column-one
+    background: $primary-bright-orange
+    border-radius: 6px 6px 0 0
+.column-two 
+    background: $primary-dark-cyan
+.column-three
+    background: $primary-very-dark-cyan
+    border-radius: 0 0 6px 6px
+.column-one h1, .column-two h2, .column-three h3 
+    color: $neutral-very-light-gray-bg-hd-btn
+    font-family: $heading-font-family
+    font-weight: 700
+    font-size: 20px
+    text-transform: uppercase
+.column-one p, .column-two p, .column-three p
+    font-family: $body-font-family
+    font-weight: 400
+    padding: 10px 10px 10px 0
+    color: $neutral-transparent-white-pargs
+    line-height: 1.5
+.column-one #btn-one
+    color: $primary-bright-orange
+.column-two #btn-two
+    color: $primary-dark-cyan
+.column-three #btn-three
+    color: $primary-very-dark-cyan
+.btn
+    font-family: $body-font-family
+    font-weight: 400
+    background-color: $neutral-very-light-gray-bg-hd-btn
+    display: inline-block
+    background-color: #fff
+    text-decoration: none
+    border-radius: 40px
+    padding: 8px 16px
+.btn:hover
+    background-color: transparent
+    outline: 2px solid #fff
+.column-one #btn-one:hover, .column-two #btn-two:hover, .column-three #btn-three:hover 
+    color: #fff
+img 
+    margin-block-end: 15px
+    max-width:40px
+.attribution
+    color: #000
+    margin-block-start: 20px
+.attribution a
+    color: hsl(228, 45%, 44%)
+@media screen and (min-width: 37.5rem)
+    .column-container
+        max-width: 100%
+        width: 700px
+        display: flex
+    .column-two p
+        padding: 10px 18px 10px 0
+    .btn
+        margin-block-start: 35px
+    .column-one
+        border-radius: 6px 0 0 6px
+    .column-three
+        border-radius: 0 6px 6px 0
+    .btn
+        padding: 8px 24px
