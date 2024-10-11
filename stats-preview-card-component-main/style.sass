@@ -1,0 +1,63 @@
+*, ::before, ::after
+    margin: 0
+    border: 0
+    padding: 0
+    outline: none
+    box-sizing: border-box
+// Variables
+$very-dark-blue-main-bg: hsl(233, 47%, 7%)
+$dark-desaturate-blue-card-bg: hsl(244, 38%, 16%)
+$soft-violet-accent: hsl(277, 64%, 61%) 
+$white-main-heading-stats: hsl(0, 0%, 100%)
+$slightly-transparent-white-main-pg: hsla(0, 0%, 100%, 0.75)
+$slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6)
+
+//Main Styling
+body 
+    background-color: $very-dark-blue-main-bg
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+.wrapper
+    background-color: $dark-desaturate-blue-card-bg
+    border-radius: 6px 6px 0 0
+.stat-image
+    position: relative
+.image-container 
+    max-width: 400px
+    border-radius: 6px 6px 0 0
+.image-container #desktop-image
+    display: none
+.image-container::before
+  content: ''
+  position: absolute
+  top: 0
+  right: 0
+  width: 100%
+  height: 99%
+  //background-color: #5C3078
+  background-color: $soft-violet-accent
+  opacity: 0.7
+  border-radius: 6px 6px 0 0
+#mobile-image
+    max-width: 100%
+    border-radius: 6px 6px 0 0
+.stat-content
+    max-width: 400px
+    text-align: center
+    padding: 1rem
+.stat-image 
+    border-radius: 6px 6px 0 0
+.stat-content h1
+    font-family: "Inter", san-serif
+    font-size: 1.8rem
+    
+//Footer Styling
+.attribution
+    color: #fff
+    font-size: 11px 
+    text-align: center 
+.attribution a 
+    color: hsl(228, 45%, 44%)
