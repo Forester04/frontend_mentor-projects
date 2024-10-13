@@ -67,9 +67,12 @@ Here is a list of projects included in this repository:
 Project 11: **Profile Card Component**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/profile-card-component-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/profile-card-component-main)
-Project 12: ****
+Project 12: **Column Preview Card Component**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/3-column-preview-card-component-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/3-column-preview-card-component-main/)
+Project 13: **Stat Preview Card Component**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/stats-preview-card-component-main)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/stats-preview-card-component-main/)
 ## How to Use
 
 To view a project, simply navigate to the corresponding directory in the repository. Each project directory contains the source code along with any additional assets or documentation.
