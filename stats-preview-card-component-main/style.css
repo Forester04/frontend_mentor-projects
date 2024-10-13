@@ -54,10 +54,12 @@ body {
   max-width: 400px;
   text-align: center;
   padding: 1rem;
+  order: 1;
 }
 
 .stat-image {
   border-radius: 6px 6px 0 0;
+  order: 2;
 }
 
 .stat-content h1 {
@@ -115,8 +117,40 @@ body {
 
 @media screen and (min-width: 37.5rem) {
   .wrapper {
-    border: 1px solid red;
     display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+  }
+  .stats-focus {
+    display: flex;
+    gap: 5rem;
+    margin-block-start: 50px;
+  }
+  .image-container #mobile-image {
+    display: none;
+  }
+  .image-container #desktop-image {
+    display: inline-block;
+  }
+  .image-container {
+    max-width: 540px;
+  }
+  .stat-content {
+    max-width: 540px;
+    text-align: left;
+    padding: 3.5rem 3.5rem 3.5rem 3.5rem;
+  }
+  .stat-content h1 {
+    margin-inline-end: 60px;
+    font-size: 35px;
+  }
+  .stat-content p {
+    line-height: 1.7;
+    margin-block-start: 20px;
+    margin-inline-end: 30px;
+  }
+  .image-container::before {
+    height: 100%;
   }
 }
 
