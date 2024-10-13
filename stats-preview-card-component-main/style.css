@@ -17,7 +17,7 @@ body {
 
 .wrapper {
   background-color: hsl(244, 38%, 16%);
-  border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 6px 6px;
 }
 
 .stat-image {
@@ -63,16 +63,61 @@ body {
 .stat-content h1 {
   font-family: "Inter", san-serif;
   font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.stat-content p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+.intro-content p {
+  margin-block-start: 15px;
+  margin-block-end: 30px;
+}
+
+.stats-focus p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Inter", san-serif;
+}
+
+.inner-stat-focus {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.inline-styling {
+  color: hsl(277, 64%, 61%);
+}
+
+.stats-focus-components {
+  margin-block-end: 20px;
 }
 
 .attribution {
   color: #fff;
   font-size: 11px;
   text-align: center;
+  margin-block-start: 15px;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 37.5rem) {
+  .wrapper {
+    border: 1px solid red;
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

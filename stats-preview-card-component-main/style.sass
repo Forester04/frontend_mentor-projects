@@ -22,7 +22,7 @@ body
     align-items: center
 .wrapper
     background-color: $dark-desaturate-blue-card-bg
-    border-radius: 6px 6px 0 0
+    border-radius: 6px 6px 6px 6px
 .stat-image
     position: relative
 .image-container 
@@ -37,7 +37,6 @@ body
   right: 0
   width: 100%
   height: 99%
-  //background-color: #5C3078
   background-color: $soft-violet-accent
   opacity: 0.7
   border-radius: 6px 6px 0 0
@@ -53,11 +52,40 @@ body
 .stat-content h1
     font-family: "Inter", san-serif
     font-size: 1.8rem
-    
+    font-weight: 700
+    color: $white-main-heading-stats
+.stat-content p
+    color: $slightly-transparent-white-main-pg
+    font-weight: 400
+    font-family: "Lexend Deca", sans-serif
+    font-size: 15px
+.intro-content p 
+    margin-block-start: 15px
+    margin-block-end: 30px
+.stats-focus p
+    color: #fff
+    font-size: 22px
+    font-weight: 700
+    font-family: "Inter", san-serif
+.inner-stat-focus
+    color: $slightly-transparent-white-stat-headings
+    text-transform: uppercase
+    font-family: "Lexend Deca", sans-serif
+    font-weight: 400
+    font-size: 13px
+.inline-styling
+    color: $soft-violet-accent 
+.stats-focus-components
+    margin-block-end: 20px
 //Footer Styling
 .attribution
     color: #fff
     font-size: 11px 
     text-align: center 
+    margin-block-start: 15px
 .attribution a 
     color: hsl(228, 45%, 44%)
+@media screen and (min-width: 37.5rem)
+    .wrapper
+        border: 1px solid red
+        display: flex
