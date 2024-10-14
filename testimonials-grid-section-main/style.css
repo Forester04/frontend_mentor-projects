@@ -126,7 +126,7 @@ animation: ani-mate 1.5s linear 500ms both 1;
     align-items: center;
     margin-bottom: 10px;
 }
-.testimonial__card__header h2 {
+.testimonial__card__header h1 {
     font-size: 15px;
 }
 
@@ -178,6 +178,8 @@ animation: ani-mate 1.5s linear 500ms both 1;
 footer {
     text-align: center;
 }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 @media screen and (max-width: 375px) {
     .testimonial__container {
         grid-template-columns: 1fr;
