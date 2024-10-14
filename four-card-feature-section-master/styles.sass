@@ -77,6 +77,11 @@ img
 @media screen and (min-width: 953px)
     .wrapper
         max-width: 1440px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
     .cards 
         max-width: 300px
         width: 100%
@@ -85,6 +90,22 @@ img
         display: flex
         gap: 30px
         margin-block-start: 40px
+    .card-header
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 80%
+    h1
+        font-size: 32px
+        text-align: center
+    h2
+        font-size: 32px
+        text-align: center
+    .description
+        width: 70%
+        font-size: 15px
+    
     .image-container
         margin-block-start: 30px
     #supervisor, #calculator
@@ -97,9 +118,3 @@ img
         border-top: 4px solid $primary-orange
     #calculator
         border-top: 4px solid $primary-blue
-    h1
-        font-size: 24px
-        text-align: center
-    h2
-        font-size: 24px
-        text-align: center
