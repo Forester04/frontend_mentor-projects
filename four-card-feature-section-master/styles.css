@@ -6,6 +6,89 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.wrapper {
+  max-width: 310px;
+  padding: 1.5rem;
+  background-color: hsl(0, 0%, 98%);
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.description {
+  font-size: 13px;
+  color: hsl(229, 6%, 66%);
+  margin-block-start: 10px;
+  text-align: center;
+}
+
+.cards {
+  background-color: #FFFFFF;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 6px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+#supervisor {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+#teamBuilder {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+#karma {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+#calculator {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+img {
+  max-width: 40px;
+}
+
+.image-container {
+  max-width: 50px;
+  margin-block-start: 20px;
+  flex: 0 0 auto;
+  align-self: flex-end;
+}
+
+.card-heading {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.card-content {
+  font-size: 13px;
+  color: hsl(229, 6%, 66%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -13,6 +96,48 @@
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 953px) {
+  .wrapper {
+    max-width: 1440px;
+  }
+  .cards {
+    max-width: 300px;
+    width: 100%;
+    height: 180px;
+  }
+  .cards-container {
+    display: flex;
+    gap: 30px;
+    margin-block-start: 40px;
+  }
+  .image-container {
+    margin-block-start: 30px;
+  }
+  #supervisor, #calculator {
+    align-self: center;
+  }
+  #supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+  }
+  #teamBuilder {
+    border-top: 4px solid hsl(0, 78%, 62%);
+  }
+  #karma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+  }
+  #calculator {
+    border-top: 4px solid hsl(212, 86%, 64%);
+  }
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
