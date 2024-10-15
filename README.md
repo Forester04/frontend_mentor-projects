@@ -64,15 +64,30 @@ Here is a list of projects included in this repository:
 - Project 10: **Huddle Landing Page**
     - [Linkk to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/huddle-landing-page-with-single-introductory-section-master)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/huddle-landing-page-with-single-introductory-section-master)
-Project 11: **Profile Card Component**
+- Project 11: **Profile Card Component**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/profile-card-component-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/profile-card-component-main)
-Project 12: **Column Preview Card Component**
+- Project 12: **Column Preview Card Component**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/3-column-preview-card-component-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/3-column-preview-card-component-main/)
-Project 13: **Stat Preview Card Component**
+- Project 13: **Stat Preview Card Component**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/stats-preview-card-component-main)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/stats-preview-card-component-main/)
+- Project 14: **Social Proof Section**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/social-proof-section-master)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/social-proof-section-master)
+- Project 15: **3 Column Preview Card**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/3-column-preview-card-component-main)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/3-column-preview-card-component-main/)
+- Project 16: **Article Preview Component**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/article-preview-component-master)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/article-preview-component-master)
+- Project 17: **Four Card Feature Section**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/four-card-feature-section-master)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/four-card-feature-section-master/)
+- Project 18: ****
+    - [Link to Project Repository]()
+    - [Live Demo]()
 ## How to Use
 
 To view a project, simply navigate to the corresponding directory in the repository. Each project directory contains the source code along with any additional assets or documentation.
@@ -90,6 +105,5 @@ Contributions are welcome! If you'd like to contribute to this repository by add
     Push to the branch (git push origin feature/add-new-project)
     Create a new pull request
 
-## License
-
-This repository is licensed under the MIT License. See the LICENSE file for details.
+## Collaboration
+I would love a code review and collaboration.👍
