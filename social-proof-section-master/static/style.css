@@ -8,6 +8,87 @@
 
 body {
   font-family: "League Spartan", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding: 1rem;
+  max-width: 100%;
+  width: 400px;
+}
+.wrapper .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 40px;
+  margin-block-end: 15px;
+}
+.wrapper h1 {
+  font-size: 30px;
+  color: hsl(300, 43%, 22%);
+  text-align: center;
+  width: 70%;
+}
+.wrapper p {
+  color: hsl(303, 10%, 53%);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.social-testimoials {
+  background-color: hsl(300, 43%, 22%);
+  margin-block-end: 15px;
+  padding: 2rem;
+  border-radius: 4px;
+  color: hsl(0, 0%, 100%);
+}
+.social-testimoials p {
+  text-align: left;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  margin-block-start: 15px;
+}
+.social-testimoials .profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.social-testimoials .profile img {
+  max-width: 30px;
+  border-radius: 50%;
+}
+.social-testimoials .profile .testimonial-info h2 {
+  font-size: 15px;
+}
+.social-testimoials .profile .testimonial-info h3 {
+  font-size: 14px;
+  color: hsl(333, 80%, 67%);
+}
+
+.social-rating {
+  margin-block: 25px;
+}
+
+.star-ratings {
+  text-align: center;
+  padding: 10px;
+  background-color: hsl(300, 24%, 96%);
+  margin-block-end: 10px;
+  border-radius: 4px;
+}
+.star-ratings p {
+  margin-block-start: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+.star-ratings .star-icon img {
+  max-width: 12px;
 }
 
 .attribution {

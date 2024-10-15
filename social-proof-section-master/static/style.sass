@@ -18,6 +18,71 @@ $white: hsl(0, 0%, 100%)
 // Main Styling
 body
     font-family: $primary-font-family
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+.wrapper
+    padding: 1rem
+    max-width: 100%
+    width: 400px
+    .heading
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-block-start: 40px
+        margin-block-end: 15px
+    h1
+        font-size: 30px
+        color: $very-dark-magenta
+        text-align: center
+        width: 70%
+    p
+        color: $dark-grayish-magenta
+        text-align: center
+        font-size: 15px
+        font-weight: 400
+.social-testimoials
+    background-color: $very-dark-magenta
+    margin-block-end: 15px
+    padding: 2rem
+    border-radius: 4px
+    color: $white
+    p
+        text-align: left
+        color: $white
+        font-weight: 400
+        margin-block-start: 15px
+    .profile
+        display: flex
+        gap: 10px
+        align-items: center
+        img
+            max-width: 30px
+            border-radius: 50%
+        .testimonial-info h2
+            font-size: 15px
+        .testimonial-info h3
+            font-size: 14px
+            color: $soft-pink
+.social-rating
+    margin-block: 25px
+
+.star-ratings
+    text-align: center
+    padding: 10px
+    background-color: $light-grayish-magenta
+    margin-block-end: 10px
+    border-radius: 4px
+    p
+        margin-block-start: 5px
+        font-size: 13px
+        font-weight: 700
+        color: $very-dark-magenta
+    .star-icon img
+        max-width: 12px
+
 
 
 
