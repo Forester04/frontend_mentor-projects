@@ -18,15 +18,8 @@ $white: hsl(0, 0%, 100%)
 // Main Styling
 body
     font-family: $primary-font-family
-    height: 100vh
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
 .wrapper
     padding: 1rem
-    max-width: 100%
-    width: 400px
     .heading
         display: flex
         justify-content: center
@@ -56,7 +49,7 @@ body
         margin-block-start: 15px
     .profile
         display: flex
-        gap: 10px
+        gap: 15px
         align-items: center
         img
             max-width: 30px
@@ -84,10 +77,6 @@ body
         max-width: 12px
 
 
-
-
-
-
 //Footer
 
 .attribution
@@ -95,3 +84,49 @@ body
     text-align: center
 .attribution a
     color: hsl(228, 45%, 44%)
+
+@media screen and (max-width: 600px)
+    .wrapper 
+        max-width: 100%
+
+
+@media screen and (min-width: 700px)
+    body
+    .wrapper
+        max-width: 100%
+        display: flex
+        flex-direction: column
+        .social-row1, .testimonials
+            display: flex
+        .testimonials
+            gap: 20px
+        .social-testimoials
+            flex-basis: 330px
+    .social-header
+        width: 50%
+        .heading 
+            justify-content: left
+            align-items: left
+            h1
+                text-align: left
+                width: 50%
+                font-size: 40px
+        p
+            text-align: left
+            width: 60%
+    .social-rating
+        width: 28%
+        display: flex
+        flex-direction: column
+    .star-ratings
+        width: 300px
+        max-width: 100%
+        display: flex
+        align-items: center
+        gap: 15px
+        .star-icon
+            margin-top: 3px
+    #indent1
+        align-self: center
+    #indent2
+        align-self: end
