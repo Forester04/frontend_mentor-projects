@@ -85,7 +85,10 @@ Here is a list of projects included in this repository:
 - Project 17: **Four Card Feature Section**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/four-card-feature-section-master)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/four-card-feature-section-master/)
-- Project 18: ****
+- Project 18: **Base Apparel Coming Soon**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/base-apparel-coming-soon-master)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/base-apparel-coming-soon-master)
+- Project 19: ****
     - [Link to Project Repository]()
     - [Live Demo]()
 ## How to Use
