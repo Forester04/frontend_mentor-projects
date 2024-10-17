@@ -73,6 +73,7 @@ p
         padding: 8px
         padding-left: 20px
         border-radius: 60px
+        display: flex
     .submit-button
         display: flex
         justify-content: center
@@ -89,7 +90,16 @@ button
     background-color: transparent
 button:hover
     cursor: pointer
-
+#errorMessage
+    color: red 
+    display: none
+    color: red
+    background-color: transparent
+    font-size: 12px
+    margin-top: 5px
+    margin-left: 15px
+#errorIcon
+    display: none
 //Footer
 .attribution
     margin-block-start: 50px
@@ -134,7 +144,9 @@ button:hover
         font-size: 60px
         max-width: 100%
         text-align: left
+        letter-spacing: 10px
     p
         text-align: left
         padding: 0
         width: 430px
+        

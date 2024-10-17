@@ -33,12 +33,16 @@
         </p>
       </div>
       <div class="form">
-        <form action="" class="form-email">
-          <div class="input"><input type="email" placeholder="Email Address"></div>
-          <div class="submit-button">
+        <form action="#" class="form-email">
+          <div class="input">
+            <input type="email" placeholder="Email Address" id="emailInput">
+            <img src="images/icon-error.svg" alt="error icon" id="errorIcon">
+          </div>
+          <div class="submit-button" id="submitButton">
             <button type="submit"><img src="images/icon-arrow.svg" alt="arrow icon"></button>
           </div>
         </form>
+        <p id="errorMessage"></p>
       </div>
     </div>
   </main>
@@ -49,5 +53,6 @@
       Coded by <a href="#">Forester Woo</a>.
     </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
