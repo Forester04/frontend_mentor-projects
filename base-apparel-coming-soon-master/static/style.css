@@ -6,13 +6,172 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.apparel-logo img {
+  padding: 1.5rem;
+  width: 40%;
+}
+
+#desktopImage {
+  display: none;
+}
+
+h1 {
+  width: 375px;
+  max-width: 70%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: hsl(0, 6%, 24%);
+}
+h1 span {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading, .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  margin-block-start: 40px;
+  margin-block-end: 15px;
+}
+
+p {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 375px;
+  color: hsl(0, 36%, 70%);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.form {
+  width: 375px;
+  margin-block-start: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-email {
+  display: flex;
+}
+.form-email .input {
+  border-top: 1px solid hsla(0, 6%, 24%, 0.4);
+  border-left: 1px solid hsla(0, 6%, 24%, 0.4);
+  border-bottom: 1px solid hsla(0, 6%, 24%, 0.4);
+  width: 290px;
+  max-width: 100%;
+  padding: 8px;
+  padding-left: 20px;
+  border-radius: 60px;
+}
+.form-email .submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 93%, 68%, 0.9);
+  width: 60px;
+  padding: 8px;
+  border-radius: 60px;
+  margin-inline-start: -40px;
+}
+.form-email .submit-button:hover {
+  background-color: hsl(0, 97%, 85%);
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .attribution {
+  margin-block-start: 50px;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 170px 250px 100px;
+  }
+  .apparel-logo {
+    display: flex;
+  }
+  .apparel-logo img {
+    align-self: center;
+    padding: 0;
+    width: 25%;
+  }
+  .apparel-logo, .heading, .description, .form {
+    grid-column: 1;
+  }
+  #mobileImage {
+    display: none;
+  }
+  #desktopImage {
+    grid-column: 2;
+    display: block;
+    width: 100%;
+  }
+  .heading, .form {
+    display: block;
+  }
+  .heading {
+    margin-block-start: 40px;
+  }
+  h1 {
+    font-size: 60px;
+    max-width: 100%;
+    text-align: left;
+  }
+  p {
+    text-align: left;
+    padding: 0;
+    width: 430px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
