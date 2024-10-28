@@ -15,7 +15,6 @@ input:focus {
 }
 
 body {
-  position: relative;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -26,15 +25,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: hsl(0, 100%, 74%);
+  background: url(../images/bg-intro-mobile.png) hsl(0, 100%, 74%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .container {
   width: 400px;
   max-width: 100%;
   padding: 4rem 1rem;
-  position: relative;
-  z-index: 1;
 }
 
 .container__description p {
@@ -49,6 +49,7 @@ body {
   border-radius: 6px;
   font-weight: 500;
   font-size: 14px;
+  box-shadow: 0 6px hsla(0, 0%, 50%, 0.4);
 }
 
 .container__trymessage p:hover {
@@ -67,21 +68,6 @@ body {
 
 .span_block {
   display: block;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(images/bg-intro-mobile.png);
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
-  opacity: 1;
-  pointer-events: none;
 }
 
 h1 {
@@ -123,6 +109,7 @@ input[type=submit] {
   text-transform: uppercase;
   font-weight: 700 !important;
   font-size: 15px;
+  box-shadow: 0 3px hsla(0, 0%, 70%, 0.4);
 }
 
 input[type=submit]:hover {
@@ -149,6 +136,7 @@ input[type=submit]:focus {
 .container__form {
   background-color: #fff;
   border-radius: 6px;
+  box-shadow: 0 6px hsla(0, 0%, 50%, 0.4);
 }
 
 .container__form p {
@@ -181,6 +169,9 @@ input[type=submit]:focus {
 }
 
 @media only screen and (min-width: 45rem) {
+  body {
+    background: url(../images/bg-intro-desktop.png) hsl(0, 100%, 74%);
+  }
   .container {
     height: 100vh;
     width: 1100px;
