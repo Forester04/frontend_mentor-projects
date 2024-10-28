@@ -30,11 +30,11 @@
       </div>
       <div class="container__form">
         <form action="#" id="form">
-          <input type="text" placeholder="First Name">
-          <input type="text" placeholder="Last Name">
-          <input type="email" placeholder="Email Address">
-          <input type="password" placeholder="Password">
-          <input type="submit" value="Claim your free trial" id="submit">
+          <input type="text" name="first-name" id="first-name" aria-label="First Name" placeholder="First Name" required>
+          <input type="text" name="last-name" id="last-name" aria-label="Last Name" placeholder="Last Name" required>
+          <input type="email" name="email" id="email" aria-label="Email Address" placeholder="Email Address" required>
+          <input type="password" name="password" id="password" aria-label="Password" placeholder="Password" required>
+          <input type="submit" value="Claim your free trial" aria-label="Submit">
         </form>
         <p>By clicking the button, you are agreeing to our <span class="terms"><a href="#">Terms and Services</a></span></p>
       </div>
@@ -47,5 +47,6 @@
       Coded by <a href="#">Forester Woo</a>.
     </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

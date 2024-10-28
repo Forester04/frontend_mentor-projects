@@ -145,6 +145,30 @@ input[type="submit"]:focus {
     opacity: 1;
     font-weight: 500;
 }
+.signup__form input + span.error-icon {
+    position: absolute;
+    right: 2.5em;
+    padding-top: 1.25em;
+}
+.signup__form input + span.error-icon img {
+    height: 1em;
+    width: 1em;
+}
+.signup__form input ~ span.error-message {
+position: relative;
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding-top: 0;
+    color: #ff7a7a;
+    font-size: 0.65em;
+    font-style: italic;
+    font-weight: 500;
+}
+.signup__form input.error {
+    border: 2px solid #ff7a7a;
+}
+  
 // Footer Styling 
 .attribution { 
     font-size: 11px; 
