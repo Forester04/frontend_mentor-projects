@@ -6,6 +6,13 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
 input {
   border: none;
 }
@@ -16,10 +23,6 @@ input:focus {
 
 body {
   height: 100vh;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   display: flex;
@@ -39,6 +42,17 @@ body {
 
 .container__description p {
   text-align: center;
+  color: #fff;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  margin-block: 0;
+  text-align: center;
+  font-weight: 700;
   color: #fff;
 }
 
@@ -70,69 +84,6 @@ body {
   display: block;
 }
 
-h1 {
-  display: none;
-}
-
-h2 {
-  margin-block: 0;
-  text-align: center;
-  font-weight: 700;
-  color: #fff;
-}
-
-#form {
-  padding: 1rem;
-}
-
-#form input {
-  border: 1px solid hsl(246, 25%, 77%);
-  display: block;
-  color: #000;
-  font-weight: 500;
-  padding: 15px 20px;
-  width: 380px;
-  max-width: 100%;
-  margin-block-end: 15px;
-  border-radius: 6px;
-}
-
-#form input:focus {
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-}
-
-input[type=submit] {
-  background-color: hsl(154, 59%, 51%);
-  color: white !important;
-  text-transform: uppercase;
-  font-weight: 700 !important;
-  font-size: 15px;
-  box-shadow: 0 3px hsla(0, 0%, 70%, 0.4);
-}
-
-input[type=submit]:hover {
-  background-color: hsl(154, 85%, 31%) !important;
-  cursor: pointer !important;
-}
-
-input[type=submit]:focus {
-  border: none !important;
-}
-
-#form input::-moz-placeholder {
-  color: #000;
-  opacity: 1;
-  font-weight: 500;
-}
-
-#form input::placeholder {
-  color: #000;
-  opacity: 1;
-  font-weight: 500;
-}
-
 .container__form {
   background-color: #fff;
   border-radius: 6px;
@@ -157,6 +108,84 @@ input[type=submit]:focus {
 .terms a:hover {
   color: hsl(0, 62%, 50%);
   cursor: pointer;
+}
+
+#form {
+  padding: 1rem;
+}
+
+#form input {
+  width: 100%;
+  color: #000;
+  font-weight: 500;
+  padding: 6px 20px;
+  margin-block-end: 15px;
+  border-radius: 6px;
+}
+
+input[type=submit] {
+  background-color: hsl(154, 59%, 51%);
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  font-size: 15px;
+  padding: 10px 20px;
+  box-shadow: 0 3px hsla(0, 0%, 70%, 0.4);
+}
+
+input[type=submit]:hover {
+  background-color: hsl(154, 85%, 31%) !important;
+  cursor: pointer !important;
+}
+
+input[type=submit]:focus {
+  border: none !important;
+}
+
+#form input::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  font-weight: 700;
+}
+
+#form input::placeholder {
+  color: #000;
+  opacity: 1;
+  font-weight: 700;
+}
+
+/* Error styling for input */
+input.error {
+  border-color: red;
+}
+
+/* Error message and icon styling */
+.error-message,
+.error-icon {
+  color: red;
+  font-size: 11px;
+  display: none;
+  margin-left: 5px;
+}
+
+.error-message {
+  border: 1px solid black;
+}
+
+.show-err {
+  border: 1px solid hsl(246, 25%, 77%);
+  display: flex;
+  margin-block-end: 1.5rem;
+}
+
+.show-err:focus {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.error-icon img {
+  width: 20px;
 }
 
 .attribution {
@@ -207,12 +236,9 @@ input[type=submit]:focus {
   }
   #form {
     padding: 2rem;
+    width: 500px;
   }
   #form input {
-    border: 1px solid hsl(246, 25%, 77%);
-    display: block;
-    padding: 15px 20px;
-    width: 450px;
     max-width: 100%;
     margin-block-end: 15px;
     border-radius: 4px;

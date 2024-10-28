@@ -30,12 +30,41 @@
       </div>
       <div class="container__form">
         <form action="#" id="form">
-          <input type="text" name="first-name" id="first-name" aria-label="First Name" placeholder="First Name" required>
-          <input type="text" name="last-name" id="last-name" aria-label="Last Name" placeholder="Last Name" required>
-          <input type="email" name="email" id="email" aria-label="Email Address" placeholder="Email Address" required>
-          <input type="password" name="password" id="password" aria-label="Password" placeholder="Password" required>
+          <div class="input-container">
+            <div class="show-err">
+              <input type="text" name="first-name" id="first-name" aria-label="First Name" placeholder="First Name" required>
+              <span class="error-icon" id="icon-first-name"><img src="../images/icon-error.svg" alt=""></span>
+            </div>
+            <span class="error-message" id="error-first-name">First Name cannot be empty</span>
+          </div>
+        
+          <div class="input-container">
+            <div class="show-err">
+              <input type="text" name="last-name" id="last-name" aria-label="Last Name" placeholder="Last Name" required>
+              <span class="error-icon" id="icon-last-name"><img src="../images/icon-error.svg" alt=""></span>
+            </div>
+            <span class="error-message" id="error-last-name">Last Name cannot be empty</span>
+          </div>
+        
+          <div class="input-container">
+            <div class="show-err">
+              <input type="email" name="email" id="email" aria-label="Email Address" placeholder="Email Address" required>
+              <span class="error-icon" id="icon-email"><img src="../images/icon-error.svg" alt=""></span>
+            </div>
+            <span class="error-message" id="error-email">Email Address cannot be empty</span>
+          </div>
+        
+          <div class="input-container">
+            <div class="show-err">
+              <input type="password" name="password" id="password" aria-label="Password" placeholder="Password" required>
+              <span class="error-icon" id="icon-password"><img src="../images/icon-error.svg" alt=""></span>
+            </div>
+            <span class="error-message" id="error-password">Password cannot be empty</span>
+          </div>
+        
           <input type="submit" value="Claim your free trial" aria-label="Submit">
         </form>
+        
         <p>By clicking the button, you are agreeing to our <span class="terms"><a href="#">Terms and Services</a></span></p>
       </div>
     </div>
