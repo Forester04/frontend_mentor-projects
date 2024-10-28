@@ -229,11 +229,6 @@ input[type=submit]:hover {
     border-radius: 0.25rem;
   }
   .container__form p {
-    padding: 0 0.2rem;
-    padding-bottom: 30px;
     margin-top: -2rem;
-    text-align: center;
-    font-size: 0.75rem;
-    color: hsl(246, 25%, 77%);
   }
 }/*# sourceMappingURL=style.css.map */
