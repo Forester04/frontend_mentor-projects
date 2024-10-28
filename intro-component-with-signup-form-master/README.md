@@ -41,8 +41,8 @@ Users are be able to:
 
 ### Links
 
-- Solution URL: [Repository URL]()
-- Live Site URL: [Live Demo Link](https://forester04.github.io/frontend_mentor-projects/)
+- Solution URL: [Repository URL](https://github.com/Forester04/frontend_mentor-projects/tree/main/intro-component-with-signup-form-master)
+- Live Site URL: [Live Demo Link](https://forester04.github.io/frontend_mentor-projects/intro-component-with-signup-form-master)
 
 ## My process
 
