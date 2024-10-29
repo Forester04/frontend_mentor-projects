@@ -88,9 +88,9 @@ Here is a list of projects included in this repository:
 - Project 18: **Base Apparel Coming Soon**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/base-apparel-coming-soon-master)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/base-apparel-coming-soon-master)
-- Project 19: ****
-    - [Link to Project Repository]()
-    - [Live Demo]()
+- Project 19: **Intro component with sign up form**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/intro-component-with-signup-form-master)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/intro-component-with-signup-form-master)
 ## How to Use
 
 To view a project, simply navigate to the corresponding directory in the repository. Each project directory contains the source code along with any additional assets or documentation.

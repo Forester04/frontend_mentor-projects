@@ -3,7 +3,7 @@ function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);  
 
-    }
+}
 
 function showErrorMessage(message) {
     const errorMessage = document.getElementById("errorMessage");
