@@ -1,0 +1,252 @@
+@use "sass:math";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+// Primary
+$blue: hsl(223, 87%, 63%);
+
+// Secondary
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+
+// Neutral
+$gray: hsl(0, 0%, 59%);
+$very-dark-blue: hsl(209, 33%, 12%);
+
+body {
+    margin: 0;
+    padding: 0;
+    font: {
+        size: math.div(20px, 16px) * 100%;
+        family: 'Libre Franklin', sans-serif;
+    }
+}
+*, * *, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.spritesheet {
+    display: none;
+}
+
+main {
+    min-height: 90vh;
+    width: min(100%, 550px);
+    padding: 2em 0;
+
+    margin: {
+        inline-start: auto;
+        inline-end: auto;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+
+    flex: {
+        direction: column;
+        wrap: nowrap;
+    }
+}
+
+.logo {
+    height: 1.25em;
+}
+
+.content {
+    text-align: center;
+    color: $very-dark-blue;
+
+    h1 {
+        font: {
+            size: 1.20em;
+        }
+    }
+
+    p {
+        font: {
+            size: 0.70em;
+        }
+    }
+
+    .light-text {
+        color: $gray;
+        font: {
+            weight: lighter;
+        }
+    }
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5em;
+    padding: 1em;
+    font-size: 0.8em;
+    flex: {
+        direction: row;
+        wrap: wrap;
+    }
+
+    & > * {
+        flex: {
+            grow: 1;
+            basis: 375px;
+        }
+    }
+
+    & input {
+        font-family: inherit;
+        font-size: inherit;
+        height: 3em;
+        border-radius: 1.5em;
+    }
+
+    & input[type="email"] {
+        border: 1px solid $pale-blue;
+        padding: 0 2em;
+        width: 100%;
+        outline: none;
+        
+        &::placeholder {
+            color: $pale-blue;
+        }
+
+        &:focus {
+            border: 2px solid $blue;
+        }
+
+        &.error {
+            border-color: $light-red;
+        }
+    }
+
+    input[type="submit"] {
+        border: none;
+        background-color: $blue;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0px 0.25em 12px 1px $pale-blue;
+        transition: background-color 0.3s ease;
+        outline: none;
+
+        &:hover {
+            background-color: hsl(223, 96%, 69%);
+        }
+
+        &:focus {
+            border: 2px solid $very-dark-blue;
+        }
+    }
+
+    .error-message {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 0.5em;
+        margin-block-end: 1em;
+        color: $light-red;
+        font: {
+            size: 0.5em;
+            style: italic;
+        }
+    }
+}
+
+.dashboard {
+    width: 100%;
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    color: $gray;
+    padding: 1em;
+    font: {
+        size: 0.6em;
+    }
+
+    .attribution {
+        padding: 1em;
+    }
+}
+
+.social {
+    margin-bottom: 2em;
+}
+
+.icon-wrapper {
+    display: inline-block;
+    border: 1px solid $pale-blue;
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    line-height: 3.20em;
+    margin: 0.3em;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        background-color: $blue;
+        border-color: $blue;
+
+        & .icon {
+            fill: white;
+        }
+    }
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: $very-dark-blue;
+    fill: $blue;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 900px) {
+    main {
+        width: min(90vw, 700px);
+        padding-block-start: 4em;
+        margin: 0 auto;
+        gap: 0.5em;
+    }
+
+    .content {
+        h1 {
+            margin-bottom: 0.25em;
+            font: {
+                size: 2.25em;
+            }
+        }
+        
+        p {
+            font-size: 1em;
+        }
+    }
+
+    .subscribe {
+        width: 100%;
+
+        .email-wrapper {
+            flex: {
+                basis: 65%;
+            }
+        }
+
+        input[type="submit"] {
+            flex: {
+                grow: 0;
+                basis: 30%;
+            }
+        }
+
+        .error-message {
+            text-align: start;
+            padding-inline-start: 2em;
+            font-size: 0.8em;
+        }
+    }
+}

@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 125%;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+*, * *, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.spritesheet {
+  display: none;
+}
+
+main {
+  min-height: 90vh;
+  width: min(100%, 550px);
+  padding: 2em 0;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  height: 1.25em;
+}
+
+.content {
+  text-align: center;
+  color: hsl(209, 33%, 12%);
+}
+.content h1 {
+  font-size: 1.2em;
+}
+.content p {
+  font-size: 0.7em;
+}
+.content .light-text {
+  color: hsl(0, 0%, 59%);
+  font-weight: lighter;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5em;
+  padding: 1em;
+  font-size: 0.8em;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.subscribe > * {
+  flex-grow: 1;
+  flex-basis: 375px;
+}
+.subscribe input {
+  font-family: inherit;
+  font-size: inherit;
+  height: 3em;
+  border-radius: 1.5em;
+}
+.subscribe input[type=email] {
+  border: 1px solid hsl(223, 100%, 88%);
+  padding: 0 2em;
+  width: 100%;
+  outline: none;
+}
+.subscribe input[type=email]::-moz-placeholder {
+  color: hsl(223, 100%, 88%);
+}
+.subscribe input[type=email]::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+.subscribe input[type=email]:focus {
+  border: 2px solid hsl(223, 87%, 63%);
+}
+.subscribe input[type=email].error {
+  border-color: hsl(354, 100%, 66%);
+}
+.subscribe input[type=submit] {
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 0.25em 12px 1px hsl(223, 100%, 88%);
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+.subscribe input[type=submit]:hover {
+  background-color: hsl(223, 96%, 69%);
+}
+.subscribe input[type=submit]:focus {
+  border: 2px solid hsl(209, 33%, 12%);
+}
+.subscribe .error-message {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 0.5em;
+  margin-block-end: 1em;
+  color: hsl(354, 100%, 66%);
+  font-size: 0.5em;
+  font-style: italic;
+}
+
+.dashboard {
+  width: 100%;
+  padding: 1em;
+}
+
+footer {
+  text-align: center;
+  color: hsl(0, 0%, 59%);
+  padding: 1em;
+  font-size: 0.6em;
+}
+footer .attribution {
+  padding: 1em;
+}
+
+.social {
+  margin-bottom: 2em;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  line-height: 3.2em;
+  margin: 0.3em;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.icon-wrapper:hover {
+  background-color: hsl(223, 87%, 63%);
+  border-color: hsl(223, 87%, 63%);
+}
+.icon-wrapper:hover .icon {
+  fill: white;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: hsl(209, 33%, 12%);
+  fill: hsl(223, 87%, 63%);
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 900px) {
+  main {
+    width: min(90vw, 700px);
+    padding-block-start: 4em;
+    margin: 0 auto;
+    gap: 0.5em;
+  }
+  .content h1 {
+    margin-bottom: 0.25em;
+    font-size: 2.25em;
+  }
+  .content p {
+    font-size: 1em;
+  }
+  .subscribe {
+    width: 100%;
+  }
+  .subscribe .email-wrapper {
+    flex-basis: 65%;
+  }
+  .subscribe input[type=submit] {
+    flex-grow: 0;
+    flex-basis: 30%;
+  }
+  .subscribe .error-message {
+    text-align: start;
+    padding-inline-start: 2em;
+    font-size: 0.8em;
+  }
+}/*# sourceMappingURL=style.css.map */
