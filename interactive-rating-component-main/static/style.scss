@@ -1,0 +1,42 @@
+// Basic css reset
+html {
+    box-sizing: border-box;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+// variables
+// Primary Colors
+$orange: hsl(25, 97%, 53%);
+
+// Neutral Colors
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+// Typograph
+// paragraph typography
+$font-size: 15px;
+
+// Main Styling
+
+
+
+
+
+
+// Footer Styling
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
