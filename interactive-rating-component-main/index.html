@@ -5,39 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
   
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
 
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="interactive-wrapper">
+    <!-- Rating state start -->
+    <div class="rating-container">
+      <div class="rating__icon">
+        <img src="images/icon-star.svg" alt="icon-star">
+      </div>
+      <div class="rating__header">       
+        <h1>How did we do?</h1>
+      </div>
+      <div class="rating__description">
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+        <div class="rating__buttons">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+        </div>
+      </div>
+      <div class="rating__subimt-btn">
+        <input type="submit" value="Submit" class="btn">
+      </div>
+    </div>
+    <!-- Rating state end -->
+    <!-- Thank you state start -->
+    <div class="thanks-container">
+      You selected <!-- Add rating here --> out of 5
+      Thank you!
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!
+    </div>
+    <!-- Thank you state end -->
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Forester Woo</a>.
+    </div>
+  </footer>
 </body>
 </html>

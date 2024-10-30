@@ -11,32 +11,110 @@ body {
     border: none;
     outline: none;
 }
-// variables
+li, button, input {
+    border: none;
+}
+// Variables
 // Primary Colors
 $orange: hsl(25, 97%, 53%);
 
 // Neutral Colors
 $white: hsl(0, 0%, 100%);
 $light-grey: hsl(217, 12%, 63%);
-$dark-blue: hsl(213, 19%, 18%);
+$dark-blue-prime: hsl(213, 19%, 18%);
+$dark-blue: hsl(212, 21%, 13%);
 $very-dark-blue: hsl(216, 12%, 8%);
 
-// Typograph
 // paragraph typography
 $font-size: 15px;
 
+// Base font family
+$font-family: "Overpass", sans-serif;
+
 // Main Styling
 
+// Base Styling
+body {
+    height: 100vh;
+    font-family: $font-family;
+    background-color: $very-dark-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.interactive-wrapper {
+    font-size: $font-size;
+    max-width: 350px;
+}
 
+.rating-container {
+    background-color: $dark-blue;
+    opacity: 1;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+.rating__header h1 {
+    color: $white;
+    font-size: 1.6rem;
+}
+.rating__description p {
+    color: $light-grey;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: $font-size;
+}
+.rating__icon img {
+    background-color: $dark-blue-prime;
+    padding: 10px;
+    border-radius: 50%;
+}
+.rating__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+    button {
+        font-weight: 700;
+        background-color: $dark-blue-prime;
+        width: 40px;
+        height: 40px;
+        color: $light-grey;
+        border-radius: 50%;
+    }
+.btn {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 15px;
+    border-radius: 100px;
+    background-color: $orange;
+    color: $dark-blue;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
 
+// Thank you rating card styling
+.thanks-container {
+    display: none;
+}
 
 
 
 // Footer Styling
+footer {
+    color: $white;
+    word-spacing: 1px;
+    margin: {
+        block-start: 30px;
+    }
+}
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: $light-grey;
 }
