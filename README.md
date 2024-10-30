@@ -94,6 +94,9 @@ Here is a list of projects included in this repository:
 - Project 20: **Ping coming soon page**
     - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/ping-coming-soon-page-master)
     - [Live Demo](https://forester04.github.io/frontend_mentor-projects/ping-coming-soon-page-master)
+- Project 21: **Interactive Rating Component**
+    - [Link to Project Repository](https://github.com/Forester04/frontend_mentor-projects/tree/main/interactive-rating-component-main)
+    - [Live Demo](https://forester04.github.io/frontend_mentor-projects/interactive-rating-component-main)
 ## How to Use
 
 To view a project, simply navigate to the corresponding directory in the repository. Each project directory contains the source code along with any additional assets or documentation.
