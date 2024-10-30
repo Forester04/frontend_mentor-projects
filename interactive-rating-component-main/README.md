@@ -53,8 +53,7 @@ Users are be able to:
 - Flexbox
 - Sass
 - Mobile-first workflow
-- For validation
-
+- Interactivity with JS
 ### What I learned
 
 I learnt to develop this simple project from the Mobile-first Approach. This make my design more responsive than starting your development fromthe desktop as the default and moving towards the mobile preview.
