@@ -1,33 +1,32 @@
-const ratingInterface = document.getElementById('rating-interface');
-const responseInterface = document.getElementById('response-interface');
+const ratingButtons = document.querySelectorAll('.value-rating');
+const submitButton = document.getElementById('btn');
+const responseRating = document.getElementById('response-rating');
+const ratingContainer = document.getElementById('rating-interface');
+const thankYouContainer = document.getElementById('response-interface');
 
-const rating = document.querySelectorAll('value-rating');
-const submitBtn = document.getElementById('btn');
-const reponseRating = document.getElementById('response-rating');
+// Function to update button styles on selection
+function updateActiveButton(selectedButton) {
+  ratingButtons.forEach(button => button.classList.remove('active'));
+  selectedButton.classList.add('active');
+}
 
+// Event listener for clicking rating buttons
+ratingButtons.forEach(button => {
+  button.addEventListener('click', (event) => {
+    const selectedValue = event.target.getAttribute('aria-label');
+    updateActiveButton(event.target);
+  });
+});
 
-let selectedValue;
-
-rating.forEach((rate, index) => {
-    rate.addEventListener('click', () => {
-        // Removing active selection
-        rating.forEach(s => s.classList.remove('active'));
-
-        // Adding active state
-        star.classList.add('active');
-        selectedValue = star.ariaLabel;
-    })
-})
-
-
-submitBtn.addEventListener('click',()=>{
-
-    ratingInterface.classList.add('hidden');
-
-    reponseRating.innerHTML = selectedValue;
-
-    responseInterface.classList.remove('hidden');
-
-})
-
+// Event listener for clicking submit button
+submitButton.addEventListener('click', () => {
+  const selectedRating = document.querySelector('.value-rating.active').getAttribute('aria-label');
+  if (selectedRating) {
+    responseRating.textContent = selectedRating;
+    ratingContainer.style.display = 'none';
+    thankYouContainer.style.display = 'block';
+  } else {
+    // Optional: Add logic to handle no selection case (e.g., alert message)
+  }
+});
 

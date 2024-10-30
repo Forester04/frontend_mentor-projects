@@ -88,6 +88,7 @@ body {
         color: #000;
         background-color: $orange;
         cursor: pointer;
+        transition: background-color 0.2s ease;
     }
 .btn {
     width: 100%;
@@ -139,6 +140,10 @@ body {
 .thanks-note {
     color: $light-grey;
     font-weight: 400;
+}
+.value-rating.active {
+    background-color: white;
+    color: black;
 }
 
 
