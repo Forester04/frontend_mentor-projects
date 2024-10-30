@@ -46,14 +46,20 @@ body {
 }
 .interactive-wrapper {
     font-size: $font-size;
-    max-width: 350px;
+    max-width: 21.875rem;
 }
 
+// Rating container styling
 .rating-container {
     background-color: $dark-blue;
     opacity: 1;
     padding: 1.5rem;
-    border-radius: 12px;
+    border-radius: 0.75rem;
+}
+.rating__icon img {
+    background-color: $dark-blue-prime;
+    padding: 0.625rem;
+    border-radius: 50%;
 }
 .rating__header h1 {
     color: $white;
@@ -65,11 +71,6 @@ body {
     line-height: 1.5;
     font-size: $font-size;
 }
-.rating__icon img {
-    background-color: $dark-blue-prime;
-    padding: 10px;
-    border-radius: 50%;
-}
 .rating__buttons {
     display: flex;
     justify-content: space-between;
@@ -78,15 +79,15 @@ body {
     button {
         font-weight: 700;
         background-color: $dark-blue-prime;
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
         color: $light-grey;
         border-radius: 50%;
     }
 .btn {
     width: 100%;
     max-width: 100%;
-    padding: 10px 15px;
+    padding: 0.625rem 0.9375rem;
     border-radius: 100px;
     background-color: $orange;
     color: $dark-blue;
@@ -98,7 +99,35 @@ body {
 
 // Thank you rating card styling
 .thanks-container {
-    display: none;
+    margin-top: 20px;
+    text-align: center;
+    background-color: $dark-blue;
+    opacity: 1;
+    border-radius: 0.75rem;
+    padding: 2rem 1.5rem;
+}
+.highlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .highlight__parg {
+        background-color: $dark-blue-prime;
+        color: $orange;
+        font-weight: 400;
+        text-align: center;
+        width: 60%;
+        padding: 5px;
+        border-radius: 100px;
+    }
+.thanks h2 {
+    color: $white;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.thanks-note {
+    color: $light-grey;
+    font-weight: 400;
 }
 
 
@@ -108,11 +137,11 @@ footer {
     color: $white;
     word-spacing: 1px;
     margin: {
-        block-start: 30px;
+        block-start: 1.875rem;
     }
 }
 .attribution {
-    font-size: 11px;
+    font-size: 0.6875rem;
     text-align: center;
 }
 .attribution a {

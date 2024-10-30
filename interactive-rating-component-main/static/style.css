@@ -30,14 +30,20 @@ body {
 
 .interactive-wrapper {
   font-size: 15px;
-  max-width: 350px;
+  max-width: 21.875rem;
 }
 
 .rating-container {
   background-color: hsl(212, 21%, 13%);
   opacity: 1;
   padding: 1.5rem;
-  border-radius: 12px;
+  border-radius: 0.75rem;
+}
+
+.rating__icon img {
+  background-color: hsl(213, 19%, 18%);
+  padding: 0.625rem;
+  border-radius: 50%;
 }
 
 .rating__header h1 {
@@ -52,12 +58,6 @@ body {
   font-size: 15px;
 }
 
-.rating__icon img {
-  background-color: hsl(213, 19%, 18%);
-  padding: 10px;
-  border-radius: 50%;
-}
-
 .rating__buttons {
   display: flex;
   justify-content: space-between;
@@ -67,8 +67,8 @@ body {
 button {
   font-weight: 700;
   background-color: hsl(213, 19%, 18%);
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   color: hsl(217, 12%, 63%);
   border-radius: 50%;
 }
@@ -76,7 +76,7 @@ button {
 .btn {
   width: 100%;
   max-width: 100%;
-  padding: 10px 15px;
+  padding: 0.625rem 0.9375rem;
   border-radius: 100px;
   background-color: hsl(25, 97%, 53%);
   color: hsl(212, 21%, 13%);
@@ -87,17 +87,49 @@ button {
 }
 
 .thanks-container {
-  display: none;
+  margin-top: 20px;
+  text-align: center;
+  background-color: hsl(212, 21%, 13%);
+  opacity: 1;
+  border-radius: 0.75rem;
+  padding: 2rem 1.5rem;
+}
+
+.highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight__parg {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  font-weight: 400;
+  text-align: center;
+  width: 60%;
+  padding: 5px;
+  border-radius: 100px;
+}
+
+.thanks h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.thanks-note {
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
 }
 
 footer {
   color: hsl(0, 0%, 100%);
   word-spacing: 1px;
-  margin-block-start: 30px;
+  margin-block-start: 1.875rem;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 
