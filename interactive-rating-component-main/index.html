@@ -16,7 +16,7 @@
 
   <main class="interactive-wrapper">
     <!-- Rating state start -->
-    <div class="rating-container">
+    <div class="rating-container" id="rating-interface">
       <div class="rating__icon">
         <img src="images/icon-star.svg" alt="icon-star">
       </div>
@@ -29,27 +29,27 @@
           to help us improve our offering!
         </p>
         <div class="rating__buttons">
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
+          <button class="value-rating" aria-label="1">1</button>
+          <button class="value-rating" aria-label="2">2</button>
+          <button class="value-rating" aria-label="3">3</button>
+          <button class="value-rating" aria-label="4">4</button>
+          <button class="value-rating" aria-label="5">5</button>
         </div>
       </div>
       <div class="rating__subimt-btn">
-        <input type="submit" value="Submit" class="btn">
+        <input type="submit" value="Submit" class="btn" id="btn">
       </div>
     </div>
     <!-- Rating state end -->
 
 
     <!-- Thank you state start -->
-    <div class="thanks-container">
+    <div class="thanks-container" id="response-innterface">
       <div class="thanks__icon">
         <img src="images/illustration-thank-you.svg" alt="icon-star">
       </div>
       <div class="highlight">
-        <p class="highlight__parg">You selected <span class="response-rating"><!-- Add rating here --></span> out of 5</p>
+        <p class="highlight__parg">You selected <span id="response-rating"><!-- Add rating here --></span> out of 5</p>
       </div>
       <div class="thanks">
         <h2>Thank you!</h2>
@@ -69,5 +69,6 @@
       Coded by <a href="#">Forester Woo</a>.
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

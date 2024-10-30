@@ -73,6 +73,12 @@ button {
   border-radius: 50%;
 }
 
+button:hover {
+  color: #000;
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
 .btn {
   width: 100%;
   max-width: 100%;
@@ -84,9 +90,16 @@ button {
   font-weight: 700;
   letter-spacing: 1px;
   text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  transition: background-color 0.2s ease;
 }
 
 .thanks-container {
+  display: none;
   margin-top: 20px;
   text-align: center;
   background-color: hsl(212, 21%, 13%);
