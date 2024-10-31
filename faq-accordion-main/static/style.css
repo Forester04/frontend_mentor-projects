@@ -13,36 +13,43 @@ body {
 }
 
 body {
-  height: 100vh;
   font-family: "Work Sans", sans-serif;
   background-color: hsl(275, 100%, 97%);
-  background-image: url(../assets/images/background-pattern-mobile.svg);
+  background-attachment: fixed;
   background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+img, svg {
+  max-width: 100%;
+}
+
 .faq-wrapper {
-  border: 2px solid red;
-  width: 300px;
+  width: 360px;
   max-width: 100%;
   background-color: #fff;
   border-radius: 10px;
-  padding-inline: 1.2rem;
+  padding-inline: 1.5rem;
+  padding-block-end: 1.5rem;
 }
 
 .faq__header {
-  border: 1px solid red;
   padding-block: 0;
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1.4rem;
 }
 
 h1 {
   font-weight: 700;
+  font-weight: 36px;
   color: hsl(292, 42%, 14%);
 }
 
@@ -51,11 +58,39 @@ h1 {
   margin-top: 4px;
 }
 
+.faq__question:not(.last-child) {
+  border-bottom: 1px solid hsla(292, 16%, 49%, 0.2);
+}
+
+.faq__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .question {
-  border: 1px solid red;
   font-size: 1rem;
   font-weight: 600;
   color: hsl(292, 42%, 14%);
+  flex-basis: 90%;
+}
+
+.answer {
+  color: hsl(292, 16%, 49%);
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.plus-icon {
+  flex-basis: 5%;
+}
+
+.plus-icon {
+  transition: transform 0.6s ease;
+}
+
+.plus-icon.rotate {
+  transform: rotate(45deg);
 }
 
 .attribution {
@@ -65,5 +100,22 @@ h1 {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 40%);
+}
+
+@media (max-width: 700px) {
+  body {
+    height: 100vh;
+    background-image: url(../assets/images/background-pattern-mobile.svg);
+  }
+}
+@media (min-width: 700px) {
+  body {
+    height: 100vh;
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+  }
+  .faq-wrapper {
+    width: 500px;
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
