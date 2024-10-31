@@ -1,0 +1,151 @@
+// Resets
+body {
+    margin: 0;
+    padding: 0;
+}
+*, * *, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(252, 243, 244);
+    font: {
+        family: 'Poppins', sans-serif;
+    }
+}
+*:not(p) > a {
+    text-decoration: none;
+}
+
+header {
+    background-color: black;
+    font-weight: 700;
+    padding: 1em;
+    & * {
+        color: white;
+    }
+}
+
+nav a {
+    font-weight: bold;
+
+    &:hover {
+        color: pink;
+    }
+}
+
+main {
+    width: min(80vw, 900px);
+    margin: 0 auto;
+}
+
+section {
+    padding: 1em;
+}
+
+.intro {
+    text-align: center;
+    font-weight: 600;
+}
+    .content-jump {
+        text-transform: uppercase;
+        border: {
+            top: 1px solid black;
+            bottom: 1px solid black;
+        }
+
+        ul {
+            display: inline-block;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                padding: 0 0.5em;
+            }
+        }
+    }
+
+ul.preview-cards {
+    list-style: none;
+    padding: 1em;
+}
+
+.preview-cards__card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex: {
+        direction: row;
+        wrap: nowrap;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 1em;
+    }
+
+    &:hover {
+        transform: scale(105%);
+    }
+}
+
+.preview-cards__img {
+    max-width: 40%;
+    min-height: 175px;
+    object-fit: cover;
+    flex: {
+        grow: 0;
+        shrink: 1;
+    }
+}
+
+.preview-cards__body {
+    padding: 1em;
+}
+
+.preview-cards__title {
+    color: inherit;
+    transition: all 0.3s ease;
+    font: {
+        size: 1.25em;
+        weight: bold;
+    }
+
+    &::after {
+        color: #000;
+        content: url(../images/external-link-hover.svg);
+        margin-left: 0.5em;
+    }
+
+    &:hover {
+        color: #ff69b4;
+
+        &::after {
+            content: url(../images/external-link-hover.svg);
+        }
+    }
+}
+
+.preview-cards__description {
+    font-size: 0.9em;
+}
+.preview__source-code {
+    color: inherit;
+    font-weight: 500;
+
+    &::after {
+        color: #000;
+        content: url(../images/external-link-hover.svg);
+        margin-left: 0.5em;
+    }
+
+    &:hover {
+        color: #ff69b4;
+
+        &::after {
+            content: url(../images/external-link-hover.svg);
+        }
+    }
+}

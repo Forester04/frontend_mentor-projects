@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, * *, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(252, 243, 244);
+  font-family: "Poppins", sans-serif;
+}
+
+*:not(p) > a {
+  text-decoration: none;
+}
+
+header {
+  background-color: black;
+  font-weight: 700;
+  padding: 1em;
+}
+header * {
+  color: white;
+}
+
+nav a {
+  font-weight: bold;
+}
+nav a:hover {
+  color: pink;
+}
+
+main {
+  width: min(80vw, 900px);
+  margin: 0 auto;
+}
+
+section {
+  padding: 1em;
+}
+
+.intro {
+  text-align: center;
+  font-weight: 600;
+}
+
+.content-jump {
+  text-transform: uppercase;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.content-jump ul {
+  display: inline-block;
+  padding: 0;
+}
+.content-jump ul li {
+  display: inline-block;
+  padding: 0 0.5em;
+}
+
+ul.preview-cards {
+  list-style: none;
+  padding: 1em;
+}
+
+.preview-cards__card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.preview-cards__card:not(:last-child) {
+  margin-bottom: 1em;
+}
+.preview-cards__card:hover {
+  transform: scale(105%);
+}
+
+.preview-cards__img {
+  max-width: 40%;
+  min-height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.preview-cards__body {
+  padding: 1em;
+}
+
+.preview-cards__title {
+  color: inherit;
+  transition: all 0.3s ease;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.preview-cards__title::after {
+  color: #000;
+  content: url(../images/external-link-hover.svg);
+  margin-left: 0.5em;
+}
+.preview-cards__title:hover {
+  color: #ff69b4;
+}
+.preview-cards__title:hover::after {
+  content: url(../images/external-link-hover.svg);
+}
+
+.preview-cards__description {
+  font-size: 0.9em;
+}
+
+.preview__source-code {
+  color: inherit;
+  font-weight: 500;
+}
+.preview__source-code::after {
+  color: #000;
+  content: url(../images/external-link-hover.svg);
+  margin-left: 0.5em;
+}
+.preview__source-code:hover {
+  color: #ff69b4;
+}
+.preview__source-code:hover::after {
+  content: url(../images/external-link-hover.svg);
+}/*# sourceMappingURL=style.css.map */
