@@ -312,7 +312,7 @@ label {
     letter-spacing: 1px;
     display: block;
     margin-bottom: 5px;
-    padding: 12px;
+    padding: 12px 12px;
 }
 
 input[type="number"] {
@@ -360,5 +360,41 @@ input[type="radio"] {
     flex: 60%;
     width: 800px;
 }
-
-
+.testimonies {
+    font-family: "Roboto", sans-serif;
+    background-color: #000;
+    color: #fff;
+    h4 {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        padding: 4rem 0;
+        font-weight: 700;
+        font-size: 3.8rem;
+    }
+}
+.testimony-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimony {
+    flex: 70%;
+    text-align: center;
+    p {
+        width: 60%;
+        margin: 0 auto;
+        line-height: 1.7;
+        padding: 20px 0;
+    }
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
+#profile1, #profile2 {
+    width: 60px;
+    height: 60px;
+    max-width: 100%;
+    border-radius: 50%;
+}
