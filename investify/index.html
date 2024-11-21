@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -10,41 +11,165 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css ">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-3d"></script>
     <title>Investify</title>
 </head>
 <body>
-    <main class="wrapper-container">
-        <header class="header-container d-flex">
-            <div class="logo-container d-flex">
-                <img src="images/logo.jpeg" alt="logo" class="logo">
-                <h1>Investify</h1>
-            </div>
-            <nav class="nav-container">
-                <ul class="nav-links d-flex">
-                    <li><a href="">Invest</a></li>
-                    <li><a href="">Learn</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="" id="btn">Sign Up to Invest Today</a></li>
-                </ul>
-            </nav>
-        </header>
-        <Section class="hero-container d-flex">
-            <h2>Hero section</h2>
-            <div class="illustrator-img">
-                <img src="images/illustrator.webp" alt="illustration image" id="illustrator-img">
-            </div>
-            <div class="illustration-description">
-                <p class="hero-importance">Ensuring maximum Investment</p>
-                <h3>Invest Smarter, Build a Better Future</h3>
-                <p class="description">Empower your financial journey with our secure platform. Learn about investing, choose the right options, and access valuable financial resources, all while your data remains protected by our advanced security measures.</p>
-                <p class="cta-statement">Your path to financial freedom starts here. Don't miss this opportunity.</p>
-
-                <div class="cta-button">
-                    <a href="" class="cta-invest">Invest Now</a>
-                    <a href="" class="cta-learn">Learn More</a>
+    <main>
+        <div class="wrapper-container">
+            <header class="header-container d-flex">
+                <div class="logo-container d-flex">
+                    <img src="images/logo.jpeg" alt="logo" class="logo">
+                    <h1>Investify</h1>
                 </div>
+                <nav class="nav-container">
+                    <ul class="nav-links d-flex">
+                        <li><a href="">Invest</a></li>
+                        <li><a href="">Learn</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="" id="btn">Sign Up to Invest Today</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <Section class="hero-container d-flex">
+                <h2>Hero section</h2>
+                <div class="illustrator-img">
+                    <img src="images/illustrator.webp" alt="illustration image" id="illustrator-img">
+                </div>
+                <div class="illustration-description">
+                    <p class="hero-importance">Ensuring maximum Investment</p>
+                    <h3>Invest Smarter, Build a Better Future</h3>
+                    <p class="description">Empower your financial journey with our secure platform. Learn about investing, choose the right options, and access valuable financial resources, all while your data remains protected by our advanced security measures.</p>
+                    <p class="cta-statement">Your path to financial freedom starts here. Don't miss this opportunity.</p>
+    
+                    <div class="cta-button">
+                        <a href="" class="cta-invest">Invest Now</a>
+                        <a href="" class="cta-learn">Learn More</a>
+                    </div>
+                </div>
+            </Section>
+            <section>
+                <h2>Services section</h2>
+                <div class="service-wrapper">
+                    <div class="first">
+                        <img src="images/timer.png" alt="timer icon">
+                        <p class="service-header">Solve Problems Real Time</p>
+                        <p class="service-description">Real-time problem solving is not just about time, it's about time. This allows you to solve problems within a specified time problem has a solution.</p>
+                    </div>
+                    <div class="second">
+                        <img src="images/sec.png" alt="security icon">
+                        <p class="service-header">Secure Your Financial Journey</p>
+                        <p class="service-description">Credit cards are a secure and convenient way to manage your finances. Use them to make informed investment decisions, access valuable financial resources, and enjoy the peace of mind that comes with strong security measures.</p>
+                    </div>
+                    <div class="third">
+                        <img src="images/support.png" alt="support icon">
+                        <p class="service-header">24//7 Customer Support</p>
+                        <p class="service-description">The biggest benefit of offering 24/7 support is that you provide a more convenient service for your customers providing clock support.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="investments">
+                <h2>Investment Section</h2>
+                <div class="investment-tiers">
+                    <div class="tier-row1">
+                        <div class="tier-cont tier1">
+                            <h4>$10</h4>
+                            <p class="risk">Low-Risk, Steady Growth</p>
+                            <p class="return one">A conservative option for beginners. Expect modest returns over time.</p>
+                            <div class="button"><a href="" class="tier-btn">Invest Now</a></div>
+                        </div>
+                        <div class="tier-cont tier2">
+                            <h4>$25</h4>
+                            <p class="risk">Balanced Growth</p>
+                            <p class="return">A balanced approach to risk and reward. Aim for moderate returns with potential for higher gains.</p>
+                            <div class="button"><a href="" class="tier-btn">Invest Now</a></div>
+                        </div>
+                        <div class="tier-cont tier3">
+                            <h4>$40</h4>
+                            <p class="risk">Moderate Risk, Higher Returns</p>
+                            <p class="return">Increased potential for significant returns, but with higher volatility.</p>
+                            <div class="button"><a href="" class="tier-btn">Invest Now</a></div>
+                        </div>
+                        <div class="tier-cont tier4">
+                            <h4>$55</h4>
+                            <p class="risk">Aggressive Growth</p>
+                            <p class="return">A riskier option for experienced investors. Target substantial returns, but be prepared for market fluctuations.</p>
+                            <div class="button"><a href="" class="tier-btn">Invest Now</a></div>
+                        </div>
+                    </div>
+                    <div class="tier-row2">
+                        <div class="tier-cont tier5">
+                            <h4>$100</h4>
+                            <p class="risk">Diversified Portfolio</p>
+                            <p class="return">A well-rounded approach with a mix of stocks, bonds, and other assets. Aim for consistent, long-term growth.</p>
+                            <div class="button"><a href="" class="tier-btn">Invest Now</a></div>
+                        </div>
+                        <div class="tier-cont tier6">
+                            <h4>$150</h4>
+                            <p class="risk">High-Growth Potential</p>
+                            <p class="return six">A high-risk, high-reward strategy focused on emerging markets and innovative technologies</p>
+                            <div class="button"><a href="" class="tier-btn">Invest Now</a></div>
+                        </div>
+                        <div class="tier-cont tier7">
+                            <h4>$170</h4>
+                            <p class="risk">Custom Portfolio</p>
+                            <p class="return seven">A personalized investment plan tailored to your specific financial goals and risk tolerance</p>
+                            <div class="button"><a href="" class="tier-btn">Invest Now</a></div>
+                        </div>
+                        <div class="tier-cont tier8">
+                            <h4>$200</h4>
+                            <p class="risk">Exclusive Investment Opportunities</p>
+                            <p class="return">Access to exclusive deals and private equity funds. A high-risk, high-reward strategy</p>
+                            <div class="button"><a href="" class="tier-btn">Invest Now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="invest-calculation">
+            <div class="wrapper-container invest-intro">
+                <p class="estimate">Calculate your estimate</p>
+                <p class="estimate-note">See your potential</p>
+                <p class="estimate-description">Check out our compound interest calculator to see just how much the power of time and compound interest can help your money grow. </p>
             </div>
-        </Section>
+            <section class="wrapper-container visual-section">
+                <h2>Investment calculator</h2>
+                <div class="calculator">
+            
+                    <label for="initialDeposit">Initial Deposit:</label>
+                    <input type="number" id="initialDeposit" value="100">
+            
+                    <label for="contributions">Contributions:</label>
+                    <input type="number" id="contributions" value="20">
+            
+                    <label>Frequency:</label>
+                    <input type="radio" name="frequency" value="annual" checked> Annual
+                    <input type="radio" name="frequency" value="monthly"> Monthly
+                    <input type="radio" name="frequency" value="weekly"> Weekly
+                    <input type="radio" name="frequency" value="daily">  
+             Daily
+            
+                    <label for="yearsToGrow">Years to Grow:</label>
+                    <input type="range" id="yearsToGrow" min="1" max="20" value="20">
+                    <span id="yearsValue">20</span> years
+            
+                    <label for="annualReturn">Average Annual Return:</label>
+                    <input type="number" id="annualReturn" value="0">
+            
+                    <button id="button" onclick="calculate()">Calculate my estimate</button>
+            
+                    <div id="result"></div>
+                </div>
+                <div class="visual-chart">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </section>
+        </section>
+        <section class="testimonies">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum delectus recusandae dolor porro expedita, minima eligendi adipisci numquam sint ullam, enim, nulla ipsam? Molestias earum libero facere magni nemo harum.</p>
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

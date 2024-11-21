@@ -71,7 +71,7 @@ body {
 #btn {
   background-color: #04aa6d;
   color: #fff;
-  padding: 10px 20px;
+  padding: 15px 25px;
   border-radius: 4px;
 }
 
@@ -91,39 +91,40 @@ h2 {
 }
 
 .illustrator-img {
-  flex: 38%;
+  flex: 35%;
 }
 
 .illustration-description {
-  flex: 45%;
+  flex: 40%;
 }
 .illustration-description .description {
   margin: 1rem 0;
   line-height: 1.7;
   color: #2b2a2a;
+  font-size: clamp(0.7rem, 2vw, 1.25rem);
   font-weight: 500;
 }
 .illustration-description .cta-statement {
-  font-size: 1rem;
+  font-size: 20px;
   color: #ff007f;
 }
 
 #illustrator-img {
-  width: 550px;
   max-width: 100%;
   border-radius: 8px;
 }
 
 .hero-importance {
+  margin-top: 1.5rem;
   font-size: 20px;
   color: #ff007f;
 }
 
 .illustration-description h3 {
   margin-top: 1rem;
-  font-size: 46px;
+  font-size: clamp(2rem, 5vw, 5rem);
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .cta-button {
@@ -131,10 +132,12 @@ h2 {
   margin-top: 3.5rem;
 }
 .cta-button .cta-invest {
+  max-width: 100%;
   background-color: #04aa6d;
   color: #fff;
+  font-size: 1.3rem;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 20px 30px;
   border-radius: 4px;
 }
 .cta-button .cta-invest:hover {
@@ -144,13 +147,225 @@ h2 {
   text-decoration: none;
 }
 .cta-button .cta-learn {
+  max-width: 100%;
+  font-size: 1.3rem;
   margin-left: 20px;
   background-color: transparent;
   border: 2px solid #000;
-  padding: 10px 20px;
+  padding: 20px 30px;
   color: #000;
   font-weight: 600;
 }
 .cta-button .cta-learn:hover {
   background-color: #98d8ee;
+}
+
+.service-wrapper {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  margin-top: 8rem;
+  gap: 4%;
+}
+.service-wrapper .first {
+  padding-right: 2rem;
+  border-right: 1px solid rgb(224, 222, 222);
+}
+.service-wrapper .third {
+  padding-left: 2rem;
+  border-left: 1px solid rgb(224, 222, 222);
+}
+.service-wrapper img {
+  width: 90px;
+  border-radius: 4px;
+}
+.service-wrapper div {
+  flex: 30%;
+}
+.service-wrapper div .service-header {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.service-wrapper div .service-description {
+  color: #2b2a2a;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.investments {
+  font-family: "Roboto", sans-serif;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.investment-tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.investment-tiers .tier-row1, .investment-tiers .tier-row2 {
+  display: flex;
+  gap: 12%;
+}
+.investment-tiers .tier-row1 .tier1 .button, .investment-tiers .tier-row1 .tier4 .button, .investment-tiers .tier-row1 .tier5 .button, .investment-tiers .tier-row1 .tier8 .button, .investment-tiers .tier-row2 .tier1 .button, .investment-tiers .tier-row2 .tier4 .button, .investment-tiers .tier-row2 .tier5 .button, .investment-tiers .tier-row2 .tier8 .button {
+  background-color: rgb(19, 19, 31);
+}
+.investment-tiers .tier-row1 .tier1 .button:hover, .investment-tiers .tier-row1 .tier4 .button:hover, .investment-tiers .tier-row1 .tier5 .button:hover, .investment-tiers .tier-row1 .tier8 .button:hover, .investment-tiers .tier-row2 .tier1 .button:hover, .investment-tiers .tier-row2 .tier4 .button:hover, .investment-tiers .tier-row2 .tier5 .button:hover, .investment-tiers .tier-row2 .tier8 .button:hover {
+  background-color: rgb(58, 58, 73);
+}
+.investment-tiers .tier-row1 .tier2 .button, .investment-tiers .tier-row1 .tier3 .button, .investment-tiers .tier-row1 .tier6 .button, .investment-tiers .tier-row1 .tier7 .button, .investment-tiers .tier-row2 .tier2 .button, .investment-tiers .tier-row2 .tier3 .button, .investment-tiers .tier-row2 .tier6 .button, .investment-tiers .tier-row2 .tier7 .button {
+  background-color: rgb(241, 15, 15);
+}
+.investment-tiers .tier-row1 .tier2 .button:hover, .investment-tiers .tier-row1 .tier3 .button:hover, .investment-tiers .tier-row1 .tier6 .button:hover, .investment-tiers .tier-row1 .tier7 .button:hover, .investment-tiers .tier-row2 .tier2 .button:hover, .investment-tiers .tier-row2 .tier3 .button:hover, .investment-tiers .tier-row2 .tier6 .button:hover, .investment-tiers .tier-row2 .tier7 .button:hover {
+  background-color: rgb(240, 79, 79);
+}
+.investment-tiers .tier-row1 .tier-cont, .investment-tiers .tier-row2 .tier-cont {
+  height: 240px;
+  max-height: 100%;
+}
+.investment-tiers .tier-row1 div, .investment-tiers .tier-row2 div {
+  width: 15%;
+  max-width: 100%;
+  border: 1px solid rgb(223, 222, 222);
+  text-align: center;
+  border-radius: 8px;
+}
+.investment-tiers .tier-row1 div h4, .investment-tiers .tier-row2 div h4 {
+  margin-top: 6px;
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(19, 19, 31);
+}
+.investment-tiers .tier-row1 div .risk, .investment-tiers .tier-row2 div .risk {
+  margin-top: 3px;
+  font-weight: 600;
+  color: rgb(19, 19, 31);
+}
+.investment-tiers .tier-row1 div .return, .investment-tiers .tier-row2 div .return {
+  padding: 0.1rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #2b2a2a;
+}
+.investment-tiers .tier-row1 div .one, .investment-tiers .tier-row1 div .six, .investment-tiers .tier-row1 div .seven, .investment-tiers .tier-row2 div .one, .investment-tiers .tier-row2 div .six, .investment-tiers .tier-row2 div .seven {
+  margin-top: 28px;
+}
+.investment-tiers .tier-row1 div .button, .investment-tiers .tier-row2 div .button {
+  cursor: pointer;
+  padding: 12px 0;
+  border-radius: 6px;
+  width: 230px;
+  max-width: 100%;
+}
+.investment-tiers .tier-row1 div .tier-btn, .investment-tiers .tier-row2 div .tier-btn {
+  border-radius: 6px;
+}
+.investment-tiers .tier-row1 div a, .investment-tiers .tier-row2 div a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.estimate {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ff007f;
+  text-transform: uppercase;
+  padding: 2rem;
+}
+
+.estimate-note {
+  font-size: 4rem;
+  color: rgb(19, 19, 31);
+  padding-bottom: 2rem;
+}
+
+.estimate-description {
+  color: rgb(75, 73, 73);
+  font-size: 1.2rem;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.invest-calculation {
+  font-family: "Inter", sans-serif;
+  background-color: #f3f2ee;
+}
+
+.invest-intro {
+  text-align: center;
+}
+
+.visual-section {
+  display: flex;
+  gap: 5%;
+}
+
+.calculator {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 100%;
+  flex: 35%;
+}
+
+label {
+  color: #4CAF50;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 5px;
+  padding: 12px;
+}
+
+input[type=number] {
+  width: 60%;
+  padding: 15px;
+  border-radius: 100px;
+  font-size: 1.2rem;
+}
+
+input[type=radio] {
+  margin-right: 10px;
+  color: #4CAF50;
+}
+
+#yearsToGrow {
+  width: 100%;
+  color: #4CAF50;
+}
+
+#yearsValue {
+  margin-left: 10px;
+}
+
+#button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 30px 0;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#myChart {
+  flex: 60%;
+  width: 800px;
 }/*# sourceMappingURL=style.css.map */
