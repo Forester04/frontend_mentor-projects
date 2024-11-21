@@ -338,4 +338,37 @@ input[type="radio"] {
   max-width: 100%;
   border-radius: 50%; }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0; }
+
+.footer-nav {
+  font-weight: 500 !important; }
+
+.social-icons a {
+  padding: 0 20px; }
+
+.telegram-icon, .instagram-icon, .facebook-icon {
+  color: #24a1de; }
+
+.wrapper-container1 {
+  width: 90%;
+  margin: 0 auto; }
+
+.legal-header, .copyright {
+  font-weight: 600;
+  padding: 20px 0; }
+
+.fixed {
+  position: absolute;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1; }
+
+footer {
+  color: gray; }
+
 /*# sourceMappingURL=style.css.map */
