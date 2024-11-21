@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/style.css ">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-3d"></script>
+        <script src="https://kit.fontawesome.com/ebb7e681ac.js" crossorigin="anonymous"></script>
+        <title>Investify</title>
+    </head>
+<body>
+    <header class="header-container d-flex wrapper-container">
+        <div class="logo-container d-flex">
+            <img src="images/logo.jpeg" alt="logo" class="logo">
+            <h1>Investify</h1>
+        </div>
+        <nav class="nav-container">
+            <ul class="nav-links d-flex">
+                <li><a href="index.html">Invest</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="" id="btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper-learn wrapper-container">
+        <div class="learn-header">
+            <h1>Learn About Investment</h1>
+            <p>Explore videos, articles, and guides to help you on your investment journey.</p>
+        </div>
+        <section class="videos-section">
+            <h2>Investment Videos</h2>
+            <div class="video-container">
+                <div class="video-card">
+                    <iframe width="700" height="400" src="https://www.youtube.com/embed/qprRKzxingA?si=rBkcMkTZqNk12hgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Discover the fundamentals of investing and embark on a journey towards financial freedom. Our comprehensive video guide breaks down complex concepts into easy-to-understand explanations, covering essential topics like asset allocation, risk management, and long-term wealth building. Whether you're a novice investor or seeking to refine your strategies, this video will equip you with the knowledge and confidence to make informed decisions and achieve your financial goals.</p>
+                </div>
+                <div class="video-card">
+                    <iframe width="700" height="400" src="https://www.youtube.com/embed/ObxbnMhDmx8?si=JCQwFetcgo5_IWni" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Navigate the investment landscape with confidence. Our informative video delves into the intricate relationship between risk and return, providing practical insights to help you make informed decisions. Learn how to assess risk tolerance, diversify your portfolio, and balance potential rewards with potential losses. Whether you're a seasoned investor or just starting out, this video will empower you to make sound investment choices.</p>
+                </div>
+                <div class="video-card">
+                    <iframe width="700" height="400" src="https://www.youtube.com/embed/jg_MflByI3Y?si=B0RDTysyuWfyYhXb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Protect your investments and maximize returns by diversifying your portfolio. Our video explores the power of spreading your investments across various asset classes, such as stocks, bonds, and real estate. Learn how to construct a diversified portfolio that aligns with your risk tolerance and financial goals. By diversifying, you can mitigate risk and increase the potential for long-term growth.</p>
+                </div>
+            </div>
+        </section>
+        <section class="blogs-section">
+            <div class="blog-header">
+                <h3>Investment Blogs</h3>
+                <p>Unlock the secrets of successful investing with our exclusive blog posts. Don't miss out on valuable insights and strategies that can transform your financial future.</p>
+            </div>
+            <div class="blog-list">
+                <article>
+                    <img src="images/invest.png" alt="">
+                    <h3><a href="https://www.bankrate.com/investing/investment-strategies-for-beginners/" target="_blank">Top 5 Investment Strategies for Beginners</a></h3>
+                    <p>Embark on your investment journey with confidence. Our comprehensive guide will equip you with the knowledge and tools to make informed decisions and achieve your financial goals. Learn about diverse investment strategies, from low-risk to high-risk options, and discover how to build a diversified portfolio that aligns with your risk tolerance and financial objectives.</p>
+                </article>
+                <article>
+                    <img src="images/retire.png" alt="">
+                    <h3><a href="https://www.rba.go.ke/top-8-ways-to-approach-saving-for-retirement/" target="_blank">How to Start Saving for Retirement Early</a></h3>
+                    <p>Discover the life-changing benefits of retiring early. Our guide will help you understand the strategies and mindset required to achieve your goals. Learn how to maximize your savings, invest wisely, and create a sustainable financial plan. Take control of your future and unlock the freedom to pursue your passions.</p>
+                </article>
+                <article>
+                    <img src="images/return.png" alt="">
+                    <h3><a href="https://boolkah.com/maximising-returns-and-minimising-risk/" target="_blank">Maximizing Returns with Low-Risk Investments</a></h3>
+                    <p>Discover investment strategies that offer stable returns with minimal risk. Our guide will help you identify reliable investment options, such as bonds, dividend stocks, and real estate investment trusts (REITs). Learn how to diversify your portfolio, manage risk effectively, and build a solid financial foundation for the future.</p>
+                </article>
+            </div>
+        </section>
+    </div>
+    <div class="footer wrapper-container">
+        <div class="logo-container d-flex">
+            <img src="images/logo.jpeg" alt="logo" class="logo">
+            <h1>Investify</h1>
+        </div>
+        <nav class="nav-container">
+            <ul class="nav-links d-flex footer-nav">
+                <li><a href="index.html">Invest</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="" id="btn">Ready to Start?</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="" class="telegram-icon"><i class="fa-brands fa-telegram fa-3x"></i></a>
+            <a href="" class="instagram-icon"><i class="fa-brands fa-instagram fa-3x"></i></i></a>
+            <a href="" class="facebook-icon"><i class="fa-brands fa-facebook fa-3x"></i></i></a>
+        </div>
+    </div>
+</body>
+</html>

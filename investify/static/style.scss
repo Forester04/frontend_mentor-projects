@@ -46,6 +46,7 @@ body {
     text-decoration: none;
     color: rgb(18, 18, 32);
     font-weight: 600;
+    font-size: 1.3rem;
     padding-bottom: 5px;
 }
 .nav-links a:hover {
@@ -351,8 +352,10 @@ input[type="radio"] {
 
 #result {
     margin-top: 20px;
-    font-size: 2rem;
+    margin-bottom: 20px;
+    font-size: 2.6rem;
     font-weight: 600;
+    color: #4CAF50;
 }
 
 // Chart
@@ -397,6 +400,7 @@ input[type="radio"] {
     height: 60px;
     max-width: 100%;
     border-radius: 50%;
+    margin-bottom: 2rem;
 }
 .footer {
     display: flex;
@@ -420,14 +424,145 @@ input[type="radio"] {
 .legal-header, .copyright {
     font-weight: 600;
     padding: 20px 0;
+    text-decoration: underline;
 }
 .fixed {
     position: absolute;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 40px;
     z-index: 1 
 }
 footer {
     color: gray;
+}
+
+// Learn
+.learn-header {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 3rem 0;
+    h1 {
+        font-size: 3.1rem;
+    }
+    p {
+        font-size: 1.1rem;
+        padding: 1.2rem 0;
+    }
+}
+.video-container {
+    font-family: "Inter", sans-serif;
+}
+.video-card {
+    display: flex;
+    gap: 5%;
+    margin-bottom: 1.7rem;
+    iframe {
+        flex: 50%;
+        border-radius: 8px;
+    }
+    p {
+        flex: 40%;
+        line-height: 1.7;
+        font-size: 1.2rem;
+    }
+}
+.blog-header {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    h3 {
+        font-size: 2.8rem;
+        padding: 3rem;
+    }
+    p {
+        width: 50%;
+        margin: 0 auto;
+        line-height: 1.7;
+        font-size: 1.2rem;
+        font-style: italic;
+        padding-bottom: 3rem;
+    }
+
+}
+.blog-list {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 5rem;
+    display: flex;
+    gap: 5%;
+    article {
+        flex: 30%;
+        img {
+            max-width: 500px;
+            border-radius: 6px;
+        }
+        h3 {
+            padding-top: 1rem;
+        }
+        p {
+            line-height: 1.5;
+            padding: 1rem  0;
+        }
+    }
+}
+// Contact
+.contact-header {
+    text-align: center;
+    margin: 3rem 0;
+    h1 {
+        font-size: 3.1rem;
+    }
+    p {
+        font-size: 1.3rem;
+        padding: 1.2rem 0;
+    }
+}
+.form-field {
+    width: 80%;
+    margin: 0 auto;
+}
+.labelName {
+    color: #000;
+}
+#contactForm {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 700px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1.5rem;
+    button {
+        display: block;
+    }
+}
+#name, #email, #message {
+    border: 1px solid gray;
+    border-radius: 6px;
+    height: 3rem;
+    width: 90%;
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+}
+#message {
+    height: 260px;
+    min-height: 200px;
+    max-height: 100%;
+}
+.form-btn {
+    background-color: #04aa6d;
+    margin-top: 1.5rem;
+    padding: 20px 80px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.form-btn:hover  {
+    background-color: #5ace9f;
+}
+.login {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 1rem 0;
+    word-spacing: 1px;
 }

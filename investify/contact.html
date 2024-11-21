@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css ">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-3d"></script>
+    <script src="https://kit.fontawesome.com/ebb7e681ac.js" crossorigin="anonymous"></script>
+    <title>Investify</title>
+</head>
+<body>
+    <div class="container wrapper-container">
+        <header class="header-container d-flex">
+            <div class="logo-container d-flex">
+                <img src="images/logo.jpeg" alt="logo" class="logo">
+                <h1>Investify</h1>
+            </div>
+            <nav class="nav-container">
+                <ul class="nav-links d-flex">
+                    <li><a href="index.html">Invest</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="" id="btn">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p>Don't hesitate to reach out to us for any inquiries or support. We're here to help!</p>
+        </div>
+
+        <div class="form-field">
+            <form id="contactForm">
+                <label for="name" class="labelName">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email" class="labelName">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message" class="labelName">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="form-btn">Submit</button>
+            </form>
+            <p class="login">Already a member? <a href="login.html">Log In</a></p>
+            <p class="login">New to our platform? <a href="signup.html">Sign Up</a> and unlock exclusive benefits!</p>
+        </div>
+    </div>
+    <div class="footer wrapper-container">
+        <div class="logo-container d-flex">
+            <img src="images/logo.jpeg" alt="logo" class="logo">
+            <h1>Investify</h1>
+        </div>
+        <nav class="nav-container">
+            <ul class="nav-links d-flex footer-nav">
+                <li><a href="#">Invest</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="" id="btn">Ready to Start?</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="" class="telegram-icon"><i class="fa-brands fa-telegram fa-3x"></i></a>
+            <a href="" class="instagram-icon"><i class="fa-brands fa-instagram fa-3x"></i></i></a>
+            <a href="" class="facebook-icon"><i class="fa-brands fa-facebook fa-3x"></i></i></a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
