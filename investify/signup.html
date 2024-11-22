@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css ">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-3d"></script>
+    <script src="https://kit.fontawesome.com/ebb7e681ac.js" crossorigin="anonymous"></script>
+    <title>Investify</title>
+    <style>
+        body {
+            background-color: #cecaca;
+        }
+    </style>
+</head>
+<body>
+    <div class="sign-container">
+        <div class="logo-container d-flex logo-sign">
+            <img src="images/logo.jpeg" alt="logo" class="logo">
+            <h1>Investify</h1>
+        </div>
+        <div class="form-container wrapper-container">
+            <p class="sign-description">Welcome to Investify! Grow your oak!
+                <br>
+                <p class="sign-description__more">New to our platform? Sign Up and unlock exclusive benefits!</p>
+            </p>
+            <form id="signup-form">
+                <h2>Sign Up</h2>
+                <label for="firstname" class="label">Firstname</label>
+                <input type="text" id="signup-firstname" placeholder="Firtname">
+                <label for="lastname" class="label">Lastname</label>
+                <input type="text" id="signup-lastname" placeholder="Lastname">
+                <label for="email" class="label">Email Address</label>
+                <input type="email" id="signup-email" placeholder="Email">
+                <label for="password" class="label">Password</label>
+                <input type="password" id="signup-password" placeholder="Password">  
+
+                <button type="submit" class="form-btn">Sign Up</button>
+                <div id="success1"></div>
+                <div id="existingUser"></div>
+            </form>
+
+            <form id="login-form">  
+
+                <h2>Log In</h2>
+                <p class="sign-description__more">Already a member?</p>
+                <label for="email" class="label">Email <Address></Address></label>
+                <input type="email" id="login-email" placeholder="Email">
+                <label for="password" class="label">Password</label>
+                <input type="password" id="login-password" placeholder="Password">
+                <button type="submit" class="form-btn">Log In</button>
+            </form>
+            <div id="success2"></div>
+            <div id="failed"></div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
