@@ -1,4 +1,5 @@
 {
+  "homepage": "https://forester04.github.io/frontend_mentor-projects/browser-extensions-manager",
   "name": "browser-extensions-manager",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^19.0.0",
