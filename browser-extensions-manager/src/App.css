@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+#root {
+  /** Colors **/
+
+  --neutral-900: hsl(227, 75%, 14%);
+  --neutral-800: hsl(226, 25%, 17%);
+  --neutral-700: hsl(225, 23%, 24%);
+  --neutral-600: hsl(226, 11%, 37%);
+  --neutral-300: hsl(0, 0%, 78%);
+  --neutral-200: hsl(217, 61%, 90%);
+  --neutral-100: hsl(0, 0%, 93%);
+  --neutral-0: hsl(200, 60%, 99%);
+
+  /** Red **/
+
+  --red-400: hsl(3, 86%, 64%);
+  --red-500: hsl(3, 71%, 56%);
+  --red700: hsl(3, 77%, 44%);
+
+  /**Gradient **/
+
+  --light-Gradient: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+
+  /** Typography **/
+  --font-size-paragraph: 16px;
+
+  --font-family: "Noto Sans", sans-serif;
+  --font-weights-400: 400;
+  --font-weights-500: 500;
+  --font-weights-700: 700;
+
+}
+  
+
+body {
+  background-image: linear-gradient(180deg, #040918 0%, #091540 100%);
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Noto Sans", sans-serif;
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/** Header Section**/
+header {
+  background-color: #1F2535;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 2.5rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+.theme {
+  background-color: #2F354B;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+/** **/
+section.list-selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.list-selection h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: var(--font-weights-700);
+  font-size: 2rem;
+  color: var(--neutral-0);
+}
+
+.btn-selection button{
+  margin-left: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: var(--font-weights-500);
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #1F2535;
+  color: var(--neutral-0);
+  padding: 0.8rem 1.6rem;
+  border: 1px solid var(--neutral-0);
+  border-radius: 1.8rem;
+  cursor: pointer;
+}
