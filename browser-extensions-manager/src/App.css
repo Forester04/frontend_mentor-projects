@@ -31,11 +31,15 @@
   --font-weights-700: 700;
 
 }
+
+.light {
+  background-image: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+}
   
 
 body {
   width: 100vw;
-  background-image: linear-gradient(180deg, #040918 0%, #091540 100%);
+  background-image: linear-gradient(180deg, #040918 0%, #091540 100%) ;
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
 }
@@ -63,6 +67,15 @@ header {
   display: flex;
   justify-content: center;
   align-self: center;
+  cursor: pointer;
+}
+
+.theme:hover {
+  outline: 1px solid var(--red-400);
+}
+
+.theme img {
+  cursor: pointer;
 }
 
 /** **/
@@ -156,6 +169,25 @@ section.list-selection h1 {
   cursor: pointer;
 }
 
+.btn-selection button:hover {
+  outline: 1px solid var(--red-400);
+}
+
+.btn-selection .active-btn {
+  outline: 1px solid var(--red-400);
+  background-color: var(--red-500);
+  color: var(--neutral-900);
+}
+
+.card-interaction .remove-btn:hover {
+  outline: 1px solid var(--red-400);
+}
+.card-interaction .remove-btn:focus {
+  outline: 1px solid var(--red-400);
+  background-color: var(--red-500);
+  color: var(--neutral-900);
+}
+
 /** Slider**/
 .switch {
   position: relative;
@@ -216,3 +248,5 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+
