@@ -1,10 +1,10 @@
 
 import { useState } from 'react'
 import data from './data.json'
-import darkLogo from './assets/images/logo-output.svg'
-import lightLogo from './assets/images/logo.svg'
-import darkIcon from './assets/images/icon-sun.svg'
-import lightIcon from './assets/images/icon-moon.svg'
+import darkLogo from '/assets/images/logo-output.svg'
+import lightLogo from '/assets/images/logo.svg'
+import darkIcon from '/assets/images/icon-sun.svg'
+import lightIcon from '/assets/images/icon-moon.svg'
 
 import './App.css'
 //import { preview } from 'vite'
