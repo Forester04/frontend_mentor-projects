@@ -41,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Solution URL](https://github.com/Forester04/frontend_mentor-projects/tree/main/browser-extensions-manager)
-- Live Site URL: [Add live site URL here](https://browser-extensions-manager-forester04s-projects.vercel.app/)
+- Live Site URL: [Add live site URL here](https://browser-extensions-manager-lemon.vercel.app/)
 
 ## My process
 
