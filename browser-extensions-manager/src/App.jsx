@@ -40,18 +40,24 @@ function App() {
           <button className="remove-btn" onClick={() => handleRemoveClick(extension.name)}>Remove</button>
           {
             extension.isActive ? 
-            <label className="switch" onClick={() => handleToggle(extension.name)}>
-              <label htmlFor='toggleCheck'>
-                <input id="toggleCheck" type="checkbox" checked={extension.isActive} onChange={() => handleToggle(extension.name)}/>
-              </label>
+            <label className="switch">
+              <input
+                type="checkbox"
+                aria-label={`Toggle ${extension.name}`}
+                checked={extension.isActive}
+                onChange={() => handleToggle(extension.name)}
+              />
               <span className="slider round"></span>
             </label> : 
-            <label className="switch" onClick={() => handleToggle(extension.name)}>
-              <label htmlFor="toggle">
-                <input id= "toggle" type="checkbox" checked={extension.isActive} onChange={() => handleToggle(extension.name)}/>
-              </label>
-            <span className="slider round"></span>
-          </label>
+            <label className="switch">
+              <input
+                type="checkbox"
+                aria-label={`Toggle ${extension.name}`}
+                checked={extension.isActive}
+                onChange={() => handleToggle(extension.name)}
+              />
+              <span className="slider round"></span>
+            </label>
           }
         </div>
       </div>
