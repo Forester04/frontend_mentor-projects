@@ -41,11 +41,15 @@ function App() {
           {
             extension.isActive ? 
             <label className="switch" onClick={() => handleToggle(extension.name)}>
-              <input type="checkbox" checked={extension.isActive} onChange={() => handleToggle(extension.name)}/>
+              <label>
+                <input type="checkbox" checked={extension.isActive} onChange={() => handleToggle(extension.name)}/>
+              </label>
               <span className="slider round"></span>
             </label> : 
             <label className="switch" onClick={() => handleToggle(extension.name)}>
-            <input type="checkbox" checked={extension.isActive} onChange={() => handleToggle(extension.name)}/>
+              <label htmlFor="">
+                <input type="checkbox" checked={extension.isActive} onChange={() => handleToggle(extension.name)}/>
+              </label>
             <span className="slider round"></span>
           </label>
           }
