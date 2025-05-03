@@ -1,11 +1,28 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+:root {
+
+  /** Colors **/
+
+  --primary-red: hsl(14, 86%, 42%);
+  --primary-green: hsl(159, 69%, 38%);
+
+  --rose-50: hsl(20, 50%, 98%);
+  --rose-100: hsl(13, 31%, 94%);
+  --rose-300: hsl(14, 25%, 72%);
+  --rose-400: hsl(7, 20%, 60%);
+  --rose-500: hsl(12, 20%, 44%);
+  --rose-900: hsl(14, 65%, 9%);
+
+  /** Typography **/
+
+  --font-size-product-names: 1rem;
+  --font-family: "Red Hat Text", sans-serif;
+  --normal-font-weight: 400;
+  --semibold-font-weight: 600;
+  --bold-font-weight: 700;
+
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,20 +30,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
+  max-width: 1440px;
   min-width: 320px;
+  margin: 0;
   min-height: 100vh;
 }
 
@@ -54,7 +62,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+@media () {
   :root {
     color: #213547;
     background-color: #ffffff;
