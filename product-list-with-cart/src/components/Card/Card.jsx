@@ -2,16 +2,16 @@ import React from "react"
 import CardButton from "./CardButton"
 import CartValue from "./CartValue"
 import data from "/data"
+import { CartList } from "../../App"
 
 
 const ItemValue  = React.createContext()
 
 export default function Card() {
 
+    const { cartList, setCartList } = React.useContext(CartList) 
+
     const [items, setItems] = React.useState(data)
-
-
-    const [cartList, setCartList] = React.useState([])
 
     React.useEffect(() => {
         setItems(prevList => prevList.map(item => ({ ...item, selected: false })))
@@ -33,7 +33,7 @@ export default function Card() {
 
     function handleAddToCartList(item) {
         const exists = cartList.some(cartItem => cartItem.name === item.name);
-        if (exists) return;
+        if (exists) return; // If the item already exists in the cartlist
       
         const updatedCart = [
           ...cartList,
@@ -71,6 +71,7 @@ export default function Card() {
     
         setCartList(updatedCart);
     }
+
     
     console.log(cartList)
 
