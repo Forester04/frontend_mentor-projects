@@ -1,6 +1,7 @@
 import React from "react"
 import Card from "./components/Card/Card"
 import Cart from "./components/Cart/Cart"
+import data from "/data"
 
 import './App.css'
 
@@ -11,10 +12,11 @@ export default function App() {
   
 
   const [cartList, setCartList] = React.useState([])
+  const [items, setItems] = React.useState(data)
 
   return (
     <main>
-      <CartList.Provider value={{cartList, setCartList}}>
+      <CartList.Provider value={{cartList, setCartList, items, setItems}}>
         <section>
           <h1>Desserts</h1>
           <div>

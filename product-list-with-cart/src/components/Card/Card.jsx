@@ -1,17 +1,13 @@
 import React from "react"
 import CardButton from "./CardButton"
 import CartValue from "./CartValue"
-import data from "/data"
 import { CartList } from "../../App"
+import addToCart from "/assets/images/icon-add-to-cart.svg"
 
-
-const ItemValue  = React.createContext()
 
 export default function Card() {
 
-    const { cartList, setCartList } = React.useContext(CartList) 
-
-    const [items, setItems] = React.useState(data)
+    const { cartList, setCartList, items, setItems } = React.useContext(CartList)
 
     React.useEffect(() => {
         setItems(prevList => prevList.map(item => ({ ...item, selected: false })))
@@ -72,10 +68,18 @@ export default function Card() {
         setCartList(updatedCart);
     }
 
-    
-    console.log(cartList)
+    function padZeroRight(number) {
+        const numStr = String(number);
+        if (numStr.includes('.')) {
+            return numStr + '0';
+        } else if (!numStr.includes('.')) {
+            return numStr + '.00'
+        }
+        return numStr;
+    }
 
     let width = useWindowWidth()
+
 
     const cardInfo = items.map(item => {
 
@@ -102,23 +106,20 @@ export default function Card() {
                 />
                 ) : (
                 <CardButton onClick={() => handleAddToCartList(item)}>
-                <img src="./assets/images/icon-add-to-cart.svg" alt="add to cart" />
+                <img src={addToCart} alt="add to cart" />
                 Add to Cart
                 </CardButton>)
             }
             <div className="description">
                 <p>{item.category}</p>
                 <h2>{item.name}</h2>
-                <p>{`$ ${item.price}`}</p>
+                <p>{`$ ${padZeroRight(item.price)}`}</p>
             </div>
         </div>
     )})
     return (
-        <ItemValue.Provider value={{cartList}}>
+        <>
             {cardInfo}
-        </ItemValue.Provider>
-    )
+        </>
+    ) 
 }
-
-
-export { ItemValue }

@@ -1,4 +1,6 @@
 import React from "react"
+import iconDecrement from "/assets/images/icon-decrement-quantity.svg"
+import iconIncrement from "/assets/images/icon-increment-quantity.svg"
 
 export default function CartValue({ handleAdd, handleSub, number, handleRemove}) {
    
@@ -11,7 +13,7 @@ export default function CartValue({ handleAdd, handleSub, number, handleRemove})
                 handleAdd();
             }}
             style={{background: "gray", padding: "10px"}}
-            >+</span>
+            ><img src={iconIncrement} alt="Increase the number of the item"/></span>
             <span>{number}</span>
             <span 
             onClick={(e) => {
@@ -19,7 +21,7 @@ export default function CartValue({ handleAdd, handleSub, number, handleRemove})
                 handleSub();
             }} 
             style={{background: "gray", padding: "10px"}}
-            >-</span>
+            ><img src={iconDecrement} alt="Decrease the number of the item" /></span>
         </span>
     )
 }
