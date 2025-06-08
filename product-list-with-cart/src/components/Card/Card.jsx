@@ -4,8 +4,10 @@ import CartValue from "./CartValue"
 import { CartList } from "../../App"
 import addToCart from "/assets/images/icon-add-to-cart.svg"
 
+import '/src/App'
 
-export default function Card() {
+
+export default function Card({ className }) {
 
     const { cartList, setCartList, items, setItems } = React.useContext(CartList)
 
@@ -93,19 +95,20 @@ export default function Card() {
         const itemNumber = inCart?.number
 
     return (
-        <div key={item.name}>
+        <div key={item.name} className={className}>
             {width > 800 ? 
-            width === 1440 ? <img src={desktop} alt={item.name} /> : <img src={tablet} alt={item.name} />
-            :<img src={mobile} alt={item.name} />}
+            width === 1440 ? <div className="imageWrapper"><img src={desktop} alt={item.name} className="image"/></div> : <div className="imageWrapper"><img src={tablet} alt={item.name} className="image" /></div>
+            :<div className="imageWrapper"><img src={mobile} alt={item.name} className="image"/></div>}
             {isSelected ? (
                 <CartValue
                 handleAdd={() => handleIncrement(item.name)}
                 handleSub={() => handleDecrement(item.name)}
                 handleRemove={() => handleRemoveCart(item.name)}
                 number={itemNumber}
+                className="cartFun"
                 />
                 ) : (
-                <CardButton onClick={() => handleAddToCartList(item)}>
+                <CardButton onClick={() => handleAddToCartList(item)} className="cartBtn">
                 <img src={addToCart} alt="add to cart" />
                 Add to Cart
                 </CardButton>)

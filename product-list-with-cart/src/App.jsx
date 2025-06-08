@@ -17,14 +17,14 @@ export default function App() {
   return (
     <main>
       <CartList.Provider value={{cartList, setCartList, items, setItems}}>
-        <section>
+        <section className="itemSection">
           <h1>Desserts</h1>
-          <div>
-            <Card value={{cartList, setCartList}}/>
+          <div className="itemList">
+            <Card value={{cartList, setCartList}} className="card"/>
           </div>
 
         </section>
-        <section>
+        <section className="cartSection">
           <div>
             <Cart value={{cartList, setCartList}}/>
           </div>

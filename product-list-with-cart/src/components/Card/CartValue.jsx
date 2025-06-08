@@ -2,11 +2,13 @@ import React from "react"
 import iconDecrement from "/assets/images/icon-decrement-quantity.svg"
 import iconIncrement from "/assets/images/icon-increment-quantity.svg"
 
-export default function CartValue({ handleAdd, handleSub, number, handleRemove}) {
+import '/src/App'
+
+export default function CartValue({ handleAdd, handleSub, number, handleRemove, className}) {
    
 
     return (
-        <span onClick={handleRemove} style={{ background: "red", padding: "1rem", width: "200px"}}>
+        <span onClick={handleRemove} className={className}>
             <span  
             onClick={(e) => {
                 e.stopPropagation();

@@ -1,6 +1,6 @@
 import React from "react"
-export default function CardButton({ children, onClick }) {
+export default function CardButton({ children, onClick, className}) {
     return (
-        <button onClick={onClick}>{children}</button>
+        <button onClick={onClick} className={className}>{children}</button>
     )
 }

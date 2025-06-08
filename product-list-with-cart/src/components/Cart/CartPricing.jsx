@@ -3,13 +3,15 @@ import { CartList } from "../../App"
 import iconRemove from "/assets/images/icon-remove-item.svg"
 import iconCarbon from "/assets/images/icon-carbon-neutral.svg"
 
+import '/src/App'
+
 
 
 
 
 export default function CartPricing() {
 
-    const { cartList, setCartList, items } = React.useContext(CartList)
+    const { cartList, setCartList} = React.useContext(CartList)
 
     function padZeroRight(number) {
         const numStr = String(number);
@@ -39,13 +41,14 @@ export default function CartPricing() {
                 <div>
                     <span>{`${number}x`}</span>
                     <span>{`@ ${price}`}</span>
-                    <span>{` $ ${subTotal}`}</span>
+                    <span>{` $ ${padZeroRight(subTotal)}`}</span>
                     <span onClick={() => handleRemoveCartItem(item.name)} style={{ padding: "10px", backgroundColor: "gray"}}><img src={iconRemove}/></span>
                 </div>
                 <div>
                     <p>Order Total</p>
-                    <p>{`$ ${total}`}</p>
+                    <p>{`$ ${padZeroRight(total)}`}</p>
                 </div>
+                <div><img src={iconCarbon} alt="Carbon icon"/> <span>This is a <span>carbon-neutral</span> delivery</span></div>
                 <button>Confirm Order</button>
             </div>
         )

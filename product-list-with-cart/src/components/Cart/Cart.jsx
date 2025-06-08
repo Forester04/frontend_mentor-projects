@@ -2,6 +2,8 @@ import React from "react"
 import CartPricing from "./CartPricing"
 import { CartList } from "../../App"
 
+import '/src/App'
+
 
 export default function Cart() {
 
