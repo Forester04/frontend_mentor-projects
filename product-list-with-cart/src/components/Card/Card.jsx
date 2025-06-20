@@ -97,7 +97,7 @@ export default function Card({ className }) {
                     />
                     ) : (
                     <CardButton onClick={() => handleAddToCartList(item)} className={"absolute lg:-bottom-5 lg:right-16 -bottom-5 right-24"}>
-                    <img src={addToCart} alt="add to cart" />
+                    <img src={addToCart} alt="Cart Icon" />
                     Add to Cart
                     </CardButton>)
                 }
