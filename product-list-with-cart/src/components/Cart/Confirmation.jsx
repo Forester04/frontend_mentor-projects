@@ -60,7 +60,7 @@ export default function Confirmation({ setConfirmation}) {
                 <p>Order Total</p>
                 <p className="text-3xl font-black">{`$ ${padZeroRight(total)}`}</p>
             </div>
-            <button className="bg-red-500 p-4 rounded-full text-lg text-white font-medium cursor-pointer" onClick={handleStartNew}>Start New Order</button>
+            <button className="bg-red-500 p-4 rounded-full cursor-pointer text-lg text-white font-medium" onClick={handleStartNew}>Start New Order</button>
         </div>
     )
 }
