@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Link](https://your-solution-url.com)
-- Live Site URL: [Live Site Link](https://your-live-site-url.com)
+- Solution URL: [Github Link](https://github.com/Forester04/frontend_mentor-projects/tree/main/product-list-with-cart)
+- Live Site URL: [Live Site Link](product-list-with-cart-sage-five.vercel.app)
 
 ## My process
 
