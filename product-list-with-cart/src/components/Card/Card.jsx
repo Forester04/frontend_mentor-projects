@@ -1,4 +1,5 @@
 import React from "react"
+import { clsx } from "clsx"
 import CardButton from "./CardButton"
 import CartValue from "./CartValue"
 import { CartList } from "../../App"
@@ -14,20 +15,6 @@ export default function Card({ className }) {
     React.useEffect(() => {
         setItems(prevList => prevList.map(item => ({ ...item, selected: false })))
       }, [])
-
-    function useWindowWidth() {
-        const [width, setWidth] = React.useState(window.innerWidth)
-
-        React.useEffect(() => {
-        const handleResize = () => setWidth(window.innerWidth)
-
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-
-        }, [])
-
-        return width
-    }
 
     function handleAddToCartList(item) {
         const exists = cartList.some(cartItem => cartItem.name === item.name);
@@ -80,43 +67,45 @@ export default function Card({ className }) {
         return numStr;
     }
 
-    let width = useWindowWidth()
-
 
     const cardInfo = items.map(item => {
 
 
         const desktop = item.image.desktop
-        const tablet = item.image.tablet
-        const mobile = item.image.mobile
 
         const inCart = cartList.find(cartItem => cartItem.name === item.name);
         const isSelected = inCart?.selected
         const itemNumber = inCart?.number
 
+        const classSelect = isSelected ? " border-2 border-red-600" : ""
+        console.log(classSelect)
+
+        const classname = clsx(classSelect, "lg:w-64 w-96 rounded-lg")
+        const classFlex = clsx(className, "lg:w-64 w-96")
+
     return (
-        <div key={item.name} className={className}>
-            {width > 800 ? 
-            width === 1440 ? <div className="imageWrapper"><img src={desktop} alt={item.name} className="image"/></div> : <div className="imageWrapper"><img src={tablet} alt={item.name} className="image" /></div>
-            :<div className="imageWrapper"><img src={mobile} alt={item.name} className="image"/></div>}
-            {isSelected ? (
-                <CartValue
-                handleAdd={() => handleIncrement(item.name)}
-                handleSub={() => handleDecrement(item.name)}
-                handleRemove={() => handleRemoveCart(item.name)}
-                number={itemNumber}
-                className="cartFun"
-                />
-                ) : (
-                <CardButton onClick={() => handleAddToCartList(item)} className="cartBtn">
-                <img src={addToCart} alt="add to cart" />
-                Add to Cart
-                </CardButton>)
-            }
-            <div className="description">
-                <p>{item.category}</p>
-                <h2>{item.name}</h2>
-                <p>{`$ ${padZeroRight(item.price)}`}</p>
+        <div key={item.name} className={classFlex}>
+            <div className="relative mb-8 lg:w-64 w-96">
+                <img src={desktop} alt={item.name} className={classname} />
+                {isSelected ? (
+                    <CartValue
+                    handleAdd={() => handleIncrement(item.name)}
+                    handleSub={() => handleDecrement(item.name)}
+                    handleRemove={() => handleRemoveCart(item.name)}
+                    number={itemNumber}
+                    className={"absolute lg:-bottom-5 lg:right-16 -bottom-5 right-24"}
+                    />
+                    ) : (
+                    <CardButton onClick={() => handleAddToCartList(item)} className={"absolute lg:-bottom-5 lg:right-16 -bottom-5 right-24"}>
+                    <img src={addToCart} alt="add to cart" />
+                    Add to Cart
+                    </CardButton>)
+                }
+            </div>
+            <div className="p-2">
+                <p className="text-gray-500 text-base">{item.category}</p>
+                <h2 className="font-medium">{item.name}</h2>
+                <p className="text-[#C94E25] font-semibold">{`$ ${padZeroRight(item.price)}`}</p>
             </div>
         </div>
     )})

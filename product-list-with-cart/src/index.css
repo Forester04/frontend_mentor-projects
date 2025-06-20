@@ -1,42 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
-
-:root {
-
-  /** Colors **/
-
-  --primary-red: hsl(14, 86%, 42%);
-  --primary-green: hsl(159, 69%, 38%);
-
-  --rose-50: hsl(20, 50%, 98%);
-  --rose-100: hsl(13, 31%, 94%);
-  --rose-300: hsl(14, 25%, 72%);
-  --rose-400: hsl(7, 20%, 60%);
-  --rose-500: hsl(12, 20%, 44%);
-  --rose-900: hsl(14, 65%, 9%);
-
-  /** Typography **/
-
-  --font-size-product-names: 1rem;
-  --font-family: "Red Hat Text", sans-serif;
-  --normal-font-weight: 400;
-  --semibold-font-weight: 600;
-  --bold-font-weight: 700;
-
-  background-color: var(--rose-50);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
-body {
-  max-width: 1440px;
-  min-width: 320px;
-  margin: 0;
-  min-height: 100vh;
-}
+
 
 
 
