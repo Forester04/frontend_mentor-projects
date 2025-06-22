@@ -2,7 +2,7 @@ import data from "/data";
 import clsx from "clsx";
 export default function Card() {
   const featuredBorder =
-    "flex flex-col md:flex-row md:justify-between md:items-center bg-white p-4 rounded-md shadow-md";
+    "flex flex-col md:flex-row md:justify-between md:items-center bg-white p-4 rounded-md shadow-lg";
   const classname = clsx(featuredBorder, "border-l-4 border-cyan-600");
   const jobDetails = data.map((job) => {
     return (
@@ -52,7 +52,7 @@ export default function Card() {
           </div>
         </div>
         <div className="flex gap-2 items-center mt-4">
-          <div className="bg-cyan-100 self-start text-cyan-700 font-bold p-1 text-sm rounded-md cursor-pointer hover:text-white hover:bg-cyan-600">
+          <div className="bg-[#EEF7F6] self-start text-cyan-700 font-bold py-1 px-1.5 text-sm rounded-md cursor-pointer hover:text-white hover:bg-cyan-600">
             {job.role}
           </div>
           <div className="flex gap-2">
@@ -60,7 +60,7 @@ export default function Card() {
               return (
                 <div
                   key={tool}
-                  className="bg-cyan-100 p-1 text-cyan-700 self-start text-sm font-bold rounded-md cursor-pointer hover:text-white hover:bg-cyan-600"
+                  className="bg-[#EEF7F6] py-1 px-1.5 text-cyan-700 self-start text-sm font-bold rounded-md cursor-pointer hover:text-white hover:bg-cyan-600"
                 >
                   {tool}
                 </div>
@@ -72,7 +72,7 @@ export default function Card() {
               return (
                 <div
                   key={language}
-                  className="bg-cyan-100 self-start rounded-md p-1 text-sm text-cyan-700 font-bold cursor-pointer hover:text-white hover:bg-cyan-600"
+                  className="bg-[#EEF7F6] self-start rounded-md py-1 px-1.5 text-sm text-cyan-700 font-bold cursor-pointer hover:text-white hover:bg-cyan-600"
                 >
                   {language}
                 </div>
