@@ -1,6 +1,5 @@
-import data from "/data";
 import clsx from "clsx";
-export default function Card() {
+export default function Card({ data }) {
   const featuredBorder =
     "flex flex-col md:flex-row md:justify-between md:items-center bg-white p-4 rounded-md shadow-lg";
   const classname = clsx(featuredBorder, "border-l-4 border-cyan-600");
