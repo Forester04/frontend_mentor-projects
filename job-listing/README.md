@@ -12,11 +12,7 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -40,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Link]()
-- Live Site URL: [Live Link]()
+- Solution URL: [Github Link](https://github.com/Forester04/frontend_mentor-projects/tree/main/job-listing)
+- Live Site URL: [Live Link](https://sunny-cat-f0ada7.netlify.app/)
 
 ## My process
 

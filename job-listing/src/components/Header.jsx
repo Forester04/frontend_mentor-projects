@@ -7,7 +7,7 @@ export default function Filter({ handleFilterChange, handleClear }) {
         <div className="flex flex-nowrap items-center">
           <button
             onClick={() => handleFilterChange("role", "Frontend")}
-            className="text-cyan-600 text-sm bg-[#EEF7F6] font-semibold px-1 py-0.5 cursor-pointer"
+            className="text-cyan-600 text-sm bg-[#EEF7F6] focus:bg-cyan-700 focus:text-white font-semibold px-1 py-0.5 cursor-pointer"
           >
             Frontend
           </button>
@@ -25,7 +25,7 @@ export default function Filter({ handleFilterChange, handleClear }) {
         <div className="flex flex-nowrap items-center">
           <button
             onClick={() => handleFilterChange("language", "CSS")}
-            className="text-cyan-600 text-sm bg-[#EEF7F6] font-semibold px-1 py-0.5 cursor-pointer"
+            className="text-cyan-600 text-sm bg-[#EEF7F6]  focus:bg-cyan-700 focus:text-white font-semibold px-1 py-0.5 cursor-pointer"
           >
             CSS
           </button>
@@ -43,7 +43,7 @@ export default function Filter({ handleFilterChange, handleClear }) {
         <div className="flex flex-nowrap items-center">
           <button
             onClick={() => handleFilterChange("language", "JavaScript")}
-            className="text-cyan-600 text-sm bg-[#EEF7F6] font-semibold px-1 py-0.5 cursor-pointer"
+            className="text-cyan-600 text-sm bg-[#EEF7F6]  focus:bg-cyan-700 focus:text-white font-semibold px-1 py-0.5 cursor-pointer"
           >
             JavaScript
           </button>
