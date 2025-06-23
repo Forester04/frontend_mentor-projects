@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Link](https://github.com/Forester04/frontend_mentor-projects/tree/main/job-listing)
-- Live Site URL: [Live Link](https://sunny-cat-f0ada7.netlify.app/)
+- Live Site URL: [Live Link](https://clever-melomakarona-2a28ef.netlify.app/)
 
 ## My process
 
