@@ -1,9 +1,13 @@
 import clsx from "clsx";
-export default function Card({ data }) {
+import { filterContext } from "../../FilterContext";
+import { useContext } from "react";
+export default function Card() {
+  const { filterData, filterItem } = useContext(filterContext);
+
   const featuredBorder =
     "flex flex-col md:flex-row md:justify-between md:items-center bg-white p-4 rounded-md shadow-lg";
   const classname = clsx(featuredBorder, "border-l-4 border-cyan-600");
-  const jobDetails = data.map((job) => {
+  const jobDetails = filterData.map((job) => {
     return (
       <div key={job.id} className={job.featured ? classname : featuredBorder}>
         <div className="md:flex gap-4 items-center">
@@ -51,30 +55,35 @@ export default function Card({ data }) {
           </div>
         </div>
         <div className="flex gap-2 items-center mt-4">
-          <div className="bg-[#EEF7F6] self-start text-cyan-700 font-bold py-1 px-1.5 text-sm rounded-md cursor-pointer hover:text-white hover:bg-cyan-600">
+          <button
+            onClick={() => filterItem(job.role)}
+            className="bg-[#EEF7F6] self-start text-cyan-700 font-bold py-1 px-1.5 text-sm rounded-md cursor-pointer hover:text-white hover:bg-cyan-600"
+          >
             {job.role}
-          </div>
+          </button>
           <div className="flex gap-2">
             {job.tools.map((tool) => {
               return (
-                <div
+                <button
                   key={tool}
+                  onClick={() => filterItem(tool)}
                   className="bg-[#EEF7F6] py-1 px-1.5 text-cyan-700 self-start text-sm font-bold rounded-md cursor-pointer hover:text-white hover:bg-cyan-600"
                 >
                   {tool}
-                </div>
+                </button>
               );
             })}
           </div>
           <div className="flex gap-2">
             {job.languages.map((language) => {
               return (
-                <div
+                <button
                   key={language}
+                  onClick={() => filterItem(language)}
                   className="bg-[#EEF7F6] self-start rounded-md py-1 px-1.5 text-sm text-cyan-700 font-bold cursor-pointer hover:text-white hover:bg-cyan-600"
                 >
                   {language}
-                </div>
+                </button>
               );
             })}
           </div>
